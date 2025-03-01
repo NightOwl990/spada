@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/length_300"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/page_tip_img"
+                android:layout_width="@dimen/d_120"
+                android:layout_height="@dimen/d_120"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shopcart_empty" />
+
+        <TextView
+            android:id="@+id/page_tip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/length_15"
+            android:text="@string/empty_cart_view"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_16" />
+
+
+        <Button
+            android:id="@+id/btnCartGoHome"
+            android:layout_width="@dimen/length_144"
+            android:layout_height="@dimen/length_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/length_10"
+            android:background="@drawable/tip_btn_selector"
+            android:gravity="center"
+            android:text="@string/empty_cart_return_home"
+            android:textAllCaps="false"
+            android:textColor="#ffff4978"
+            android:textSize="@dimen/length_14" />
+    </LinearLayout>
+</RelativeLayout>

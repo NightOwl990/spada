@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="@dimen/length_300"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_round_border_white_10px"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/length_10"
+    android:paddingRight="@dimen/length_10">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgTop"
+            android:layout_width="@dimen/length_200"
+            android:layout_height="@dimen/length_120"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/length_10"
+            android:scaleType="fitCenter"
+            android:src="@drawable/aiary_no_data_bg" />
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Đã có phiên bản mới x.x"
+            android:textColor="@color/bg_service_tag2"
+            android:textSize="@dimen/length_16"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/lnDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVersion"
+            android:layout_marginTop="@dimen/length_15"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txtTitleDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết bản cập nhật:"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/length_14" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/length_10"
+                android:layout_marginBottom="@dimen/length_15" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_1px" />
+
+        <RelativeLayout
+            android:id="@+id/lnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:id="@+id/ln"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/btnDismiss"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Hủy"
+                    android:textColor="@color/text_fade"
+                    android:textSize="@dimen/length_16" />
+
+                <TextView
+                    android:id="@+id/btnUpdate"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Cập nhật ngay"
+                    android:textColor="@color/text_service_blue"
+                    android:textSize="@dimen/length_16" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/length_10"
+                android:layout_marginBottom="@dimen/length_10"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider_1px" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

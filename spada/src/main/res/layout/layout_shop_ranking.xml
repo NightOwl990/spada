@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/billboard_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_13"
+        android:layout_marginTop="@dimen/d_20"
+        android:layout_marginRight="@dimen/d_15"
+        android:layout_marginBottom="@dimen/d_20"
+        android:gravity="center_vertical"
+        android:text="Bảng xếp hạng"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/length_15" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRank"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_13"
+        android:layout_marginBottom="@dimen/d_10" />
+
+    <!--bottom ranking-->
+    <LinearLayout
+        android:id="@+id/billboard_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/d_115"
+        android:layout_marginLeft="@dimen/d_15"
+        android:layout_marginRight="@dimen/d_15"
+        android:layout_marginBottom="@dimen/d_20"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+            android:id="@+id/im_top_doc_one"
+            app:riv_corner_radius="@dimen/d_8"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitStart"
+            android:src="@drawable/hot_girl_4" />
+
+        <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+            android:id="@+id/im_top_doc_two"
+            app:riv_corner_radius="@dimen/d_8"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/d_5"
+            android:layout_weight="1.0"
+            android:scaleType="fitStart"
+            android:src="@drawable/hot_girl_3" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/recommend_city_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/d_10"
+        android:background="@color/bg_service_all" />
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlTopContent"
+    android:layout_marginLeft="@dimen/length_10"
+    android:layout_marginRight="@dimen/length_10"
+    android:background="@drawable/bg_round_border_white_8px"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_200"
+        android:visibility="visible">
+
+        <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+            android:id="@+id/imgBgMember"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_180"
+            android:layout_marginTop="@dimen/length_20"
+            android:scaleType="centerCrop"
+            android:src="@drawable/members_cards"
+            app:riv_corner_radius_bottom_left="@dimen/length_8"
+            app:riv_corner_radius_bottom_right="@dimen/length_8" />
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_55"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txtVipLevel"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/length_10"
+                android:text="HỘI VIÊN CẤP 5"
+                android:textColor="@color/golden_color"
+                android:textSize="@dimen/length_17" />
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtVipPromote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giảm 80k cho 6 lượt đặt"
+                    android:paddingRight="@dimen/length_15"
+                    android:textColor="@color/text_dark"
+                    android:paddingLeft="@dimen/length_15"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:background="@drawable/bg_gradient_member_vip_promote"
+                    android:textSize="@dimen/length_12" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/length_5"
+                    android:id="@+id/txtVipMemberCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đã có 24756 thành viên"
+                    android:layout_marginRight="@dimen/length_15"
+                    android:textColor="@color/text_vip_card_color"
+                    android:textSize="@dimen/length_12" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnStyleRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/length_10"
+        android:paddingLeft="@dimen/length_10"
+        android:background="@drawable/bg_round_border_white_8px"
+        android:paddingTop="@dimen/length_30"
+        android:paddingBottom="@dimen/length_30">
+        <!--avatar-->
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/rlAvatar"
+            android:layout_width="@dimen/length_80"
+            android:layout_height="@dimen/length_80"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <com.lgkk.base_project.widget.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="@dimen/length_80"
+                android:layout_height="@dimen/length_80"
+                android:layout_centerVertical="true"
+                android:src="@drawable/girl_select_head" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/length_17"
+                android:layout_height="@dimen/length_17"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/length_5"
+                android:background="@drawable/bg_round_profile_edit_avatar"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/length_8"
+                    android:layout_height="@dimen/length_8"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/picture_face_camera" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <!--name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_10"
+            android:layout_toRightOf="@+id/rlAvatar"
+            android:orientation="vertical">
+
+            <!--name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/length_10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="HanHee"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/length_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/length_10"
+                    android:text="Cấp độ: "
+                    android:textColor="#FF5A86"
+                    android:textSize="@dimen/length_13" />
+
+                <ImageView
+                    android:id="@+id/imgLevel"
+                    android:layout_width="@dimen/length_45"
+                    android:layout_height="@dimen/length_16"
+                    android:layout_toRightOf="@+id/txtName"
+                    android:padding="@dimen/length_1"
+                    android:src="@drawable/level17" />
+
+            </LinearLayout>
+
+            <!--post count-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtFollowNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theo dõi : 5"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/length_13" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/length_10"
+                    android:layout_marginTop="@dimen/length_3"
+                    android:layout_marginRight="@dimen/length_10"
+                    android:layout_marginBottom="@dimen/length_3"
+                    android:background="@color/bg_service_all" />
+
+                <TextView
+                    android:id="@+id/txtFollowedNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Người theo dõi : 255"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/length_13" />
+
+            </LinearLayout>
+
+            <!--camera + hot-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/length_10"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/btnCamera"
+                    android:layout_width="@dimen/length_100"
+                    android:scaleType="fitStart"
+                    android:layout_height="@dimen/length_18"
+                    android:src="@drawable/me_mirror" />
+
+                <ImageView
+                    android:id="@+id/btnSuggest"
+                    android:layout_width="@dimen/length_100"
+                    android:scaleType="fitStart"
+                    android:layout_height="@dimen/length_18"
+                    android:layout_marginLeft="@dimen/length_10"
+                    android:src="@drawable/me_punch_the_clock_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

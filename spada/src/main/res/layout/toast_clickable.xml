@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toast_bg"
+    android:paddingStart="@dimen/length_16"
+    android:paddingLeft="@dimen/length_16"
+    android:paddingTop="@dimen/length_10"
+    android:paddingEnd="@dimen/length_12"
+    android:paddingRight="@dimen/length_12"
+    android:paddingBottom="@dimen/length_10">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/length_24"
+        android:layout_height="@dimen/length_24"
+        android:layout_marginRight="@dimen/length_8"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/length_16"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/length_4"
+
+        android:layout_marginRight="@dimen/length_16"
+        android:layout_marginBottom="@dimen/length_4"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/length_4"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/btn_icon"
+            android:layout_width="@dimen/length_20"
+            android:layout_height="@dimen/length_20"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_play_arrow_white_24dp" />
+    </LinearLayout>
+</LinearLayout>

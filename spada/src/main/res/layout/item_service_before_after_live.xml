@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/length_10">
+
+    <!--Rl Name-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/length_10"
+        android:paddingRight="@dimen/length_10">
+
+        <com.lgkk.base_project.widget.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/length_35"
+            android:layout_height="@dimen/length_35"
+            android:src="@drawable/hot_girl_3" />
+
+        <RelativeLayout
+            android:id="@+id/rlName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toRightOf="@+id/imgAvatar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="HanHee"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/length_14" />
+
+                <ImageView
+                    android:id="@+id/imgLevel"
+                    android:layout_width="@dimen/length_55"
+                    android:layout_height="@dimen/length_16"
+                    android:layout_marginTop="@dimen/length_1"
+                    android:layout_toRightOf="@+id/txtName"
+                    android:padding="@dimen/length_1"
+                    android:src="@drawable/level17" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnName"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="27 ngày trước"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/length_12" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_service_blue_50px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/length_10"
+            android:paddingTop="@dimen/length_3"
+            android:paddingRight="@dimen/length_14"
+            android:paddingBottom="@dimen/length_3">
+
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="@dimen/length_15"
+                android:layout_height="@dimen/length_15"
+                android:src="@drawable/icon_accept_add" />
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu"
+                android:textColor="@color/text_service_blue"
+                android:textSize="@dimen/length_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--img before after-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_170"
+        android:layout_marginTop="@dimen/length_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/length_10"
+        android:paddingRight="@dimen/length_10"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:clipToPadding="true">
+
+            <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+                android:id="@+id/imgBefore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/length_170"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/length_2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hot_girl_3"
+                app:riv_border_color="@color/transparent"
+                app:riv_border_width="0dp"
+                app:riv_corner_radius="@dimen/length_5"
+                app:riv_mutate_background="true" />
+
+            <TextView
+                android:id="@+id/txtBefore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_round_service_two_corner"
+                android:paddingLeft="@dimen/length_10"
+                android:paddingTop="@dimen/length_2"
+                android:paddingRight="@dimen/length_10"
+                android:paddingBottom="@dimen/length_2"
+                android:text="Before"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_13" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_2"
+            android:layout_weight="1">
+
+            <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+                android:id="@+id/imgAfter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_round_normal_5px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hot_girl_3"
+                app:riv_border_color="@color/transparent"
+                app:riv_border_width="0dp"
+                app:riv_corner_radius="@dimen/length_5"
+                app:riv_mutate_background="true" />
+
+            <TextView
+                android:id="@+id/txtAfter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_round_service_two_corner_blue"
+                android:paddingLeft="@dimen/length_10"
+                android:paddingTop="@dimen/length_2"
+                android:paddingRight="@dimen/length_10"
+                android:paddingBottom="@dimen/length_2"
+                android:text="+270 ngày"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_13" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--Content-->
+    <TextView
+        android:id="@+id/txtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_10"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Lột xác 96,69% tại spa, từ cô gái thôn quê trở nên hot girl thành thị, xinh gái thế này thì mới có nhiều đứa yêu..."
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/length_14" />
+
+    <!--tag -->
+    <LinearLayout
+        android:id="@+id/lnTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTag1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/length_10"
+            android:text="# Làm mặt"
+            android:textColor="@color/text_service_blue"
+            android:textSize="@dimen/length_13" />
+
+        <TextView
+            android:id="@+id/txtTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/length_10"
+            android:text="# Phát triển tự nhiên"
+            android:textColor="@color/text_service_blue"
+            android:textSize="@dimen/length_13" />
+
+        <TextView
+            android:id="@+id/txtTag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/length_10"
+            android:text="# Hà Nội"
+            android:textColor="@color/text_service_blue"
+            android:textSize="@dimen/length_13" />
+    </LinearLayout>
+
+    <!--order -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_10"
+        android:layout_marginBottom="@dimen/length_7"
+        android:background="@drawable/bg_round_service_grey"
+        android:paddingLeft="@dimen/length_7"
+        android:paddingTop="@dimen/length_5"
+        android:paddingRight="@dimen/length_7"
+        android:paddingBottom="@dimen/length_5">
+
+        <TextView
+            android:id="@+id/txtTagName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/length_10"
+            android:background="@drawable/bg_round_service_gradient_pink"
+            android:paddingLeft="@dimen/length_5"
+            android:paddingTop="@dimen/length_2"
+            android:paddingRight="@dimen/length_5"
+            android:paddingBottom="@dimen/length_2"
+            android:text="Đầu tư"
+            android:textColor="@color/white"
+            android:textSize="@dimen/length_13" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtTagName"
+            android:text="Làm mặt "
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_13" />
+
+        <TextView
+            android:id="@+id/txtHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/length_10"
+            android:layout_toRightOf="@+id/txtTitle"
+            android:text="- Thẩm mỹ Kangnam"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_13" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="đ5.000.000"
+            android:textColor="@color/buy_now"
+            android:textSize="@dimen/length_13" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_1px" />
+
+    <!--Like Number and Comment count-->
+    <include layout="@layout/layout_like_service_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_10"
+        android:background="@color/bg_service_all" />
+</LinearLayout>

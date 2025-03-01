@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ReservedSystemPermission" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".base.MyApplicationLike"
+        android:allowBackup="true"
+        android:icon="@mipmap/homecandy_logo_v3"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeMain"
+        tools:replace="android:theme,android:icon,android:name">
+        <activity
+            android:exported="false"
+            android:name=".screen.home.activity.HospitalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen.service.activity.CartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen.home.activity.FilterHospitalListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen.home.activity.FilterHospitalListHandlerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen.home.activity.FlashSaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen._main.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen._main.SplashScreenV2Activity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="false"
+            android:name=".screen._account.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen._account.activity.LoginV2Activity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:exported="false"
+            android:name=".screen.service.activity.FilterServiceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen.service.activity.FilterServiceListHandlerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen.service.activity.DoctorInfoActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:exported="false"
+            android:name=".screen.service.activity.ServiceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen.service.activity.ServiceCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen._main.CrashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".screen._main.MainActivity"
+            android:screenOrientation="portrait" /> <!-- mp3 -->
+        <!-- <activity -->
+        <!-- android:name=".ui.screen.question.PostActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity android:name="spada.ui.screen.question.bookmark.QuestionBookmarkActivity" -->
+        <!-- android:screenOrientation="portrait"/> -->
+        <!-- <activity -->
+        <!-- android:name=".ui.screen.tool.FragmentTool" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- name -->
+        <service android:name=".firebasenotification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service android:name=".firebasenotification.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebasenotification.RegistrationIntentService" />
+        <service android:name=".firebasenotification.MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service> <!-- end FCM -->
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="${crashlyticsEnabled}" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.zing.zalo.zalosdk.appID"
+            android:value="@string/appZaloID" />
+
+        <activity
+            android:exported="false"
+            android:name="com.zing.zalo.zalosdk.oauth.WebLoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FixThemeForLoginWebview"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            tools:replace="android:configChanges, android:screenOrientation" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+    </application>
+
+</manifest>

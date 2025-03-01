@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/length_10"
+    android:paddingTop="@dimen/length_5"
+    android:paddingRight="@dimen/length_10"
+    android:paddingBottom="@dimen/length_5">
+
+    <!--Tag 1-->
+    <RelativeLayout
+        android:id="@+id/rlTag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/length_5"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imgTag1"
+            android:layout_width="@dimen/length_17"
+            android:layout_height="@dimen/length_17"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_service_tag1"
+            android:padding="@dimen/length_3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_flash_on" />
+
+
+        <TextView
+            android:id="@+id/txtTag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_3"
+            android:layout_marginRight="@dimen/length_5"
+            android:layout_toRightOf="@+id/imgTag1"
+            android:text="Giảm Giá"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_12" />
+
+        <View
+            android:id="@+id/dvd1"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/length_9"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_90"
+            android:background="@color/text_main" />
+
+        <TextView
+            android:id="@+id/txtDescriptionTag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toRightOf="@+id/dvd1"
+            android:text="Mua 3 tặng 1 phần quà trị giá 200.000đ"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_12" />
+    </RelativeLayout>
+
+    <!--Tag 2-->
+    <RelativeLayout
+        android:id="@+id/rlTag2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/length_5"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/imgTag2"
+            android:layout_width="@dimen/length_17"
+            android:layout_height="@dimen/length_17"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_service_tag2"
+            android:padding="@dimen/length_3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_like_white" />
+
+        <TextView
+            android:id="@+id/txtTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_3"
+            android:layout_marginRight="@dimen/length_5"
+            android:layout_toRightOf="@+id/imgTag2"
+            android:text="Khuyế̃n Mãi"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_12" />
+
+        <View
+            android:id="@+id/dvd2"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/length_9"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_90"
+            android:background="@color/text_main" />
+
+        <TextView
+            android:id="@+id/txtDescriptionTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toRightOf="@+id/dvd2"
+            android:text="Đặt lịch hôm nay được giảm 10% chi phí"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_12" />
+    </RelativeLayout>
+
+    <!--Tag 3-->
+    <RelativeLayout
+        android:id="@+id/rlTag3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/length_5"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/imgTag3"
+            android:layout_width="@dimen/length_17"
+            android:layout_height="@dimen/length_17"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_service_tag3"
+            android:padding="@dimen/length_3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nav_btn_post" />
+
+
+        <TextView
+            android:id="@+id/txtTag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_3"
+            android:layout_marginRight="@dimen/length_5"
+            android:layout_toRightOf="@+id/imgTag3"
+            android:text="Đặc Biệt"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_12" />
+
+        <View
+            android:id="@+id/dvdTag3"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/length_9"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_90"
+            android:background="@color/text_main" />
+
+        <TextView
+            android:id="@+id/txtDescriptionTag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toRightOf="@+id/dvdTag3"
+            android:text="Viết 3 đánh giá tặng phiếu giảm 2.000.000đ"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_12" />
+    </RelativeLayout>
+</LinearLayout>

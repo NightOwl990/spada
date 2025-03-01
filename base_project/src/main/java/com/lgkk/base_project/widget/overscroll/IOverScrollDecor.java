@@ -1,0 +1,19 @@
+package com.lgkk.base_project.widget.overscroll;
+
+import android.view.View;
+
+public interface IOverScrollDecor {
+    View getView();
+
+    void setOverScrollStateListener(IOverScrollStateListener listener);
+    void setOverScrollUpdateListener(IOverScrollUpdateListener listener);
+
+    /**
+     * Get the current decorator's runtime state, i.e. one of the values specified by {@link IOverScrollState}.
+     * @return The state.
+     */
+    int getCurrentState();
+
+
+    void detach();
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/length_48"
+
+    android:background="@color/transparent">
+
+    <View
+        android:id="@+id/topDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topDivider"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lnCbShop"
+            android:layout_width="@dimen/d_39"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbShop"
+                android:layout_width="@dimen/d_19"
+                android:layout_height="@dimen/d_19"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/length_12"
+                android:layout_marginRight="@dimen/length_12"
+                android:background="@drawable/bg_round_checkbox_cart"
+                android:button="@null"
+                android:padding="@dimen/length_5" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lnCbShop"
+            android:text="Shop Name"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/d_14" />
+
+        <ImageView
+            android:layout_width="@dimen/d_13"
+            android:layout_height="@dimen/d_13"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/d_9"
+            android:src="@drawable/right_arrow_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_1px" />
+</RelativeLayout>

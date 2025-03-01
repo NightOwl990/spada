@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llLabel"
+    style="@style/Label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/length_5"
+    android:background="@drawable/custom_auto_lable">
+
+    <TextView
+
+        android:id="@+id/tvLabel"
+        style="@style/LabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="demo"
+        android:textColor="@color/colorPrimary"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/ivCross"
+        style="@style/CrossImageView"
+        android:layout_width="@dimen/length_23"
+        android:layout_height="@dimen/length_23"
+        android:contentDescription="cross"
+        android:visibility="gone" />
+
+</LinearLayout>
+

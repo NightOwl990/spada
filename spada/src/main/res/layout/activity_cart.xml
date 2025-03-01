@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:background="@color/bg_press_color">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <!--ln pick address deliver-->
+            <LinearLayout
+                android:id="@+id/rootView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <!--Recommend Title-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/length_7"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/length_18"
+                        android:layout_height="@dimen/length_18"
+                        android:src="@drawable/icon_recommend_tab" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/length_3"
+                        android:text="Có thể bạn cũng thích"
+                        android:textColor="@color/text_btn"
+                        android:textSize="@dimen/length_14" />
+                </LinearLayout>
+
+                <!--Recommend Recycler View -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvRecommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <!--Custom Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:elevation="@dimen/length_0">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_press_item"
+            android:clickable="true"
+            android:padding="@dimen/length_10"
+            android:src="@drawable/nav_btn_back_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Giỏ hàng"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_15" />
+
+        <TextView
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/length_15"
+            android:paddingRight="@dimen/length_15"
+            android:text="Xóa"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_15" />
+
+        <TextView
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/length_15"
+            android:paddingRight="@dimen/length_15"
+            android:text="Hoàn thành"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_15"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_1px" />
+    </RelativeLayout>
+    <!--End Custom Toolbar-->
+
+    <TextView
+        android:id="@+id/txtTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnBottomBar"
+        android:background="@color/transparent_90"
+        android:gravity="center"
+        android:padding="@dimen/length_10"
+        android:text="Vui lòng chọn ít nhất 1 sản phẩm"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <!--Custom Bottom Bar-->
+    <LinearLayout
+        android:id="@+id/lnBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="@dimen/length_2"
+        android:orientation="horizontal">
+        <!--HOme-->
+        <LinearLayout
+            android:id="@+id/btnCheckAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_press_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/length_9"
+            android:paddingRight="@dimen/length_9">
+
+            <CheckBox
+                android:id="@+id/cbAll"
+                android:layout_width="@dimen/d_19"
+                android:layout_height="@dimen/d_19"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_round_checkbox_cart"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_5"
+                android:gravity="center"
+                android:text="Tất cả"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/d_14" />
+        </LinearLayout>
+
+        <!--Total Price-->
+        <RelativeLayout
+            android:id="@+id/rlTotalPrice"
+            android:layout_width="@dimen/length_180"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/length_10"
+            android:paddingRight="@dimen/length_10"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toLeftOf="@+id/textd"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Tổng: "
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/d_14" />
+
+            <TextView
+                android:id="@+id/textd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="@dimen/length_2"
+                android:layout_toLeftOf="@+id/txtTotalPrice"
+                android:textColor="@color/text_price_color"
+                android:textSize="@dimen/d_14" />
+
+            <TextView
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/length_2"
+                android:text="34.123.329.000 đ"
+                android:textColor="@color/text_price_color"
+                android:textSize="@dimen/d_14" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTotalPrice"
+                android:layout_alignParentRight="true"
+                android:text="Đã bao gồm VAT(nếu có)"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/length_11" />
+
+            <TextView
+                android:id="@+id/txtSaveDeliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTotalPrice"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/length_10"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!--Send Order-->
+            <TextView
+                android:id="@+id/btnSubmit"
+                android:layout_width="@dimen/d_94"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/length_5"
+                android:paddingRight="@dimen/length_5"
+                android:text="Gửi đơn hàng"
+                android:background="@drawable/bg_gradient_submit_cart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d_14" />
+
+
+        <!--Delete-->
+        <LinearLayout
+            android:id="@+id/lnDelete"
+            android:layout_width="@dimen/length_94"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnSubmitDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_round_shop_product_tag"
+                android:gravity="center"
+                android:paddingLeft="@dimen/length_12"
+                android:paddingTop="@dimen/length_5"
+                android:paddingRight="@dimen/length_12"
+                android:paddingBottom="@dimen/length_5"
+                android:text="Xóa"
+                android:textColor="@color/bg_shop_home_tag"
+                android:textSize="@dimen/length_14" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

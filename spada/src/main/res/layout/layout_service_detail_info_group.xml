@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tuan_top_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-7dp"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_50"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_service_detail_top"
+        android:paddingTop="@dimen/length_8"
+        android:paddingBottom="@dimen/length_5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tuan_people_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/length_15"
+                android:layout_marginBottom="@dimen/length_5"
+                android:background="@drawable/bg_service_detail_top_count"
+                android:drawableLeft="@drawable/join_top_icon"
+                android:drawablePadding="@dimen/length_2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/length_5"
+                android:paddingTop="@dimen/length_3"
+                android:paddingRight="@dimen/length_5"
+                android:paddingBottom="@dimen/length_2"
+                android:singleLine="true"
+                android:text="5 nhóm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_12" />
+
+            <TextView
+                android:id="@+id/tuan_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tuan_people_count"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/length_15"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="拼团价:￥999"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_12" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tuan_rl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/length_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tuan_downTimeStr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.0dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="yuehui_info_time_after_txt3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_14" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/length_50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/length_60"
+        android:src="@drawable/tuan_people_count_layout" />
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:background="@color/transparent_50"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@+id/fakeStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent" />
+
+
+    <com.lgkk.spada.widget.LoginScrollBackgroundView
+        android:visibility="visible"
+        android:id="@+id/loginScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fakeStatusBar"
+        android:layout_marginTop="@dimen/length_20"
+        android:layout_marginRight="@dimen/length_20"
+        layout="@layout/layout_countdown_welcome"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d_24"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/length_100"
+            android:layout_height="@dimen/length_100"
+            android:scaleType="centerInside"
+            android:src="@drawable/spada_logo_v1" />
+
+        <com.lgkk.base_project.widget.SpadaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nơi bạn là chính mình"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/check_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/d_70"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="@dimen/d_130"
+            android:layout_height="@dimen/d_37"
+            android:layout_marginRight="@dimen/d_30"
+            android:background="@drawable/new_welcome_login_bg"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textColor="@color/color_2cc7c5"
+            android:textSize="@dimen/d_17" />
+
+        <TextView
+            android:id="@+id/btnRegister"
+            android:layout_width="@dimen/d_130"
+            android:layout_height="@dimen/d_37"
+            android:background="@drawable/new_welcome_register_bg"
+            android:gravity="center"
+            android:text="Đăng ký"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d_17" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/check_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnFacebook"
+            android:layout_width="@dimen/d_35"
+            android:layout_height="@dimen/d_35"
+            android:layout_marginRight="@dimen/d_60"
+            android:padding="@dimen/dp_4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/com_facebook_button_icon_white"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/btnGoogle"
+            android:layout_width="@dimen/d_35"
+            android:layout_height="@dimen/d_35"
+            android:layout_marginRight="@dimen/d_60"
+            android:paddingTop="@dimen/d_1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_play_google" />
+
+        <ImageView
+            android:id="@+id/btnZalo"
+            android:layout_width="@dimen/d_35"
+            android:layout_height="@dimen/d_35"
+            android:scaleType="centerCrop"
+            android:padding="@dimen/d_2"
+            android:src="@drawable/ic_play_zalo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/check_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:gravity="center">
+
+        <com.lgkk.base_project.widget.SpadaTextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký là bạn đồng ý với "
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_12" />
+
+        <com.lgkk.base_project.widget.SpadaTextView
+            android:id="@+id/txtRule1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:text="Điều khoản"
+            android:textColor="@color/drop_down_selected"
+            android:textSize="@dimen/dp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" &amp; "
+            android:textColor="@color/white"
+            android:textSize="@dimen/length_13" />
+
+        <com.lgkk.base_project.widget.SpadaTextView
+            android:id="@+id/txtRule2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:text="Luật bảo mật"
+            android:textColor="@color/drop_down_selected"
+            android:textSize="@dimen/dp_12" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/blue">
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_7" />
+
+    <RelativeLayout
+        android:id="@+id/rlBot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_40"
+        android:layout_below="@+id/viewTop"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:padding="@dimen/length_12"
+            android:src="@drawable/baby_icon_back" />
+
+        <LinearLayout
+            android:id="@+id/btnMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.lgkk.base_project.widget.CircleImageView
+                android:id="@+id/imgMiddle"
+                android:layout_width="@dimen/length_26"
+                android:layout_height="@dimen/length_26"
+                android:layout_marginRight="@dimen/length_8"
+                android:src="@drawable/icon_second_doctor" />
+
+            <TextView
+                android:id="@+id/txtMiddle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông báo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_15" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnSubRight"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btnRight"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:padding="@dimen/length_12"
+            android:src="@drawable/nav_btn_post" />
+        <!--Cart-->
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:padding="@dimen/length_12"
+            android:src="@drawable/nav_btn_post" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_1px" />
+    </RelativeLayout>
+
+</RelativeLayout>

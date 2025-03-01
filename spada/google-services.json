@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1054235943731",
+    "project_id": "com-lgkk-spada",
+    "storage_bucket": "com-lgkk-spada.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054235943731:android:4b82e5067bb56657de9446",
+        "android_client_info": {
+          "package_name": "com.lgkk.spada"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTx6tpPHOCcVNcFnwoFsGIZyy5IlcPyU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

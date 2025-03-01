@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/length_190"
+    android:visibility="visible"
+    android:background="@color/bg_suggest_service_listthree"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/length_5"
+    android:paddingBottom="@dimen/length_5">
+
+
+    <!--Left product-->
+    <RelativeLayout
+        android:layout_width="@dimen/length_140"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_5"
+        android:background="@drawable/bg_gradient_suggest_service_no_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-14dp"
+            android:text="BEAUTY"
+            android:textColor="@color/bg_text_beauty_no_1"
+            android:textSize="@dimen/length_35"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNameServ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/length_25"
+            android:layout_marginBottom="@dimen/length_2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Lễ hội giảm giá 69%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/length_13"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtDescriptionServ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNameServ1"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/length_140"
+            android:maxLines="1"
+            android:text="100+ Bác sĩ tham gia"
+            android:paddingTop="@dimen/length_2"
+            android:paddingBottom="@dimen/length_2"
+            android:paddingLeft="@dimen/length_15"
+            android:paddingRight="@dimen/length_15"
+            android:background="@drawable/bg_round_border_dark_white_fill"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_11" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_100"
+            android:layout_marginBottom="@dimen/length_1"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hot_girl_1" />
+    </RelativeLayout>
+
+    <!--middle line-->
+
+    <!--Right product -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/length_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--Top Product-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/length_5"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gradient_suggest_service_no_2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-14dp"
+                android:text="BEAUTY"
+                android:visibility="gone"
+                android:textColor="@color/bg_text_beauty_no_2"
+                android:textSize="@dimen/length_35"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/length_5"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtNameServ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNameProductNo1"
+                    android:layout_marginBottom="@dimen/length_2"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Độc quyền hội viên"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/length_13"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtDescriptionServ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNameServ2"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxWidth="@dimen/length_140"
+                    android:maxLines="2"
+                    android:text="Ưu đãi tới 65%"
+                    android:paddingBottom="@dimen/length_2"
+                    android:paddingLeft="@dimen/length_15"
+                    android:paddingRight="@dimen/length_15"
+                    android:background="@drawable/bg_round_border_dark_white_fill"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/length_11" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/length_100"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="@dimen/length_1"
+                android:src="@drawable/hot_girl_2" />
+
+
+        </RelativeLayout>
+
+
+        <!--Bottom Product-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gradient_suggest_service_no_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-14dp"
+                android:text="BEAUTY"
+                android:textColor="@color/bg_text_beauty_no_3"
+                android:textSize="@dimen/length_35"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/length_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNameServ3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNameProductNo1"
+                    android:layout_marginBottom="@dimen/length_2"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Dịch vụ dưỡng nhan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/length_13"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtDescriptionServ3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxWidth="@dimen/length_140"
+                    android:maxLines="2"
+                    android:text="Giảm giá 70%"
+                    android:paddingBottom="@dimen/length_2"
+                    android:paddingLeft="@dimen/length_15"
+                    android:paddingRight="@dimen/length_15"
+                    android:background="@drawable/bg_round_border_dark_white_fill"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/length_11" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/length_100"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="@dimen/length_1"
+                android:src="@drawable/hot_girl_4" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

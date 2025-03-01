@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagenotileft"
+        android:layout_width="@dimen/length_40"
+        android:layout_height="@dimen/length_40"
+        android:layout_marginLeft="@dimen/length_10"
+        android:src="@drawable/baby_avatar" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_toRightOf="@+id/imagenotileft"
+        android:text="Đây là tiêu đề" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_toRightOf="@+id/imagenotileft"
+        android:maxLines="3"
+        android:text="đây là nội dung đây là nội dung đây là nội dung đây là nội dung đây là nội dung" />
+
+    <ImageView
+        android:id="@+id/imagenotiright"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_100"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="@dimen/length_2"
+        android:padding="@dimen/length_10"
+        android:src="@mipmap/a1" />
+
+</RelativeLayout>

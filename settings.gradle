@@ -1,0 +1,2 @@
+include ':base_project', ':mzbanner', ':module_home', ':module_shop', ':module_user', ':module_notification', ':spada', ':module_main'
+include ':banner'

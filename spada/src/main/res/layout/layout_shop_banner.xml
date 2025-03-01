@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/d_28"
+            android:background="@drawable/ic_banner_bg" />
+
+        <com.lgkk.base_project.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/d_80"
+            android:layout_marginLeft="@dimen/d_15"
+            android:layout_marginTop="@dimen/d_12"
+            android:layout_marginRight="@dimen/d_15"
+            android:layout_marginBottom="@dimen/d_15"
+            app:delay_time="3000"
+            app:image_scale_type="center_crop"
+            app:indicator_drawable_selected="@drawable/home_banner_sel_indicator"
+            app:indicator_drawable_unselected="@drawable/home_banner_def_indicator"
+            app:indicator_height="@dimen/d_2"
+            app:indicator_margin="@dimen/d_2"
+            app:indicator_width_banner="@dimen/d_10" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/d_10"
+        android:background="@color/bg_service_all" />
+</LinearLayout>

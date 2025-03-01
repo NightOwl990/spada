@@ -1,0 +1,2143 @@
+<resources>
+  <dimen name="padding_service_promotion">
+    -17.78dp
+  </dimen>
+  <dimen name="txt_tag">
+    8.89dp
+  </dimen>
+  <dimen name="txt_shop_detail_price">
+    12.44dp
+  </dimen>
+  <dimen name="txt_shop_detail_top_icon_width">
+    26.67dp
+  </dimen>
+  <dimen name="bottom_bar_height">
+    44.44dp
+  </dimen>
+  <dimen name="text_size_medium">
+    14.22sp
+  </dimen>
+  <dimen name="status_bar_album_art">
+    56.89dp
+  </dimen>
+  <dimen name="status_bar_button_info_container_padding_left">
+    9.78dp
+  </dimen>
+  <dimen name="notification_expanded_height">
+    113.78dp
+  </dimen>
+  <dimen name="play_controls_notification">
+    42.67dp
+  </dimen>
+  <dimen name="notification_padding">
+    7.11dp
+  </dimen>
+  <dimen name="label_title_size">
+    24.89dp
+  </dimen>
+  <dimen name="padding_label_view">
+    0.89dp
+  </dimen>
+  <dimen name="length_350">
+    311.11dp
+  </dimen>
+  <dimen name="length_0">
+    0.0dp
+  </dimen>
+  <dimen name="length_1">
+    0.89dp
+  </dimen>
+  <dimen name="length_10">
+    8.89dp
+  </dimen>
+  <dimen name="length_100">
+    88.89dp
+  </dimen>
+  <dimen name="length_11">
+    9.78dp
+  </dimen>
+  <dimen name="length_115">
+    102.22dp
+  </dimen>
+  <dimen name="length_12">
+    10.67dp
+  </dimen>
+  <dimen name="length_120">
+    106.67dp
+  </dimen>
+  <dimen name="length_125">
+    111.11dp
+  </dimen>
+  <dimen name="length_128">
+    113.78dp
+  </dimen>
+  <dimen name="length_13">
+    11.56dp
+  </dimen>
+  <dimen name="length_130">
+    115.56dp
+  </dimen>
+  <dimen name="length_14">
+    12.44dp
+  </dimen>
+  <dimen name="length_140">
+    124.44dp
+  </dimen>
+  <dimen name="length_144">
+    128.0dp
+  </dimen>
+  <dimen name="length_15">
+    13.33dp
+  </dimen>
+  <dimen name="length_150">
+    133.33dp
+  </dimen>
+  <dimen name="length_16">
+    14.22dp
+  </dimen>
+  <dimen name="length_160">
+    142.22dp
+  </dimen>
+  <dimen name="length_17">
+    15.11dp
+  </dimen>
+  <dimen name="length_170">
+    151.11dp
+  </dimen>
+  <dimen name="length_18">
+    16.0dp
+  </dimen>
+  <dimen name="length_180">
+    160.0dp
+  </dimen>
+  <dimen name="length_190">
+    168.89dp
+  </dimen>
+  <dimen name="length_1px">
+    0.89px
+  </dimen>
+  <dimen name="length_2">
+    1.78dp
+  </dimen>
+  <dimen name="length_20">
+    17.78dp
+  </dimen>
+  <dimen name="length_200">
+    177.78dp
+  </dimen>
+  <dimen name="length_21">
+    18.67dp
+  </dimen>
+  <dimen name="length_22">
+    19.56dp
+  </dimen>
+  <dimen name="length_23">
+    20.44dp
+  </dimen>
+  <dimen name="length_24">
+    21.33dp
+  </dimen>
+  <dimen name="length_25">
+    22.22dp
+  </dimen>
+  <dimen name="length_250">
+    222.22dp
+  </dimen>
+  <dimen name="length_26">
+    23.11dp
+  </dimen>
+  <dimen name="length_260">
+    231.11dp
+  </dimen>
+  <dimen name="length_28">
+    24.89dp
+  </dimen>
+  <dimen name="length_3">
+    2.67dp
+  </dimen>
+  <dimen name="length_30">
+    26.67dp
+  </dimen>
+  <dimen name="length_300">
+    266.67dp
+  </dimen>
+  <dimen name="length_32">
+    28.44dp
+  </dimen>
+  <dimen name="length_320">
+    284.44dp
+  </dimen>
+  <dimen name="length_33">
+    29.33dp
+  </dimen>
+  <dimen name="length_34">
+    30.22dp
+  </dimen>
+  <dimen name="length_35">
+    31.11dp
+  </dimen>
+  <dimen name="length_36">
+    32.0dp
+  </dimen>
+  <dimen name="length_4">
+    3.56dp
+  </dimen>
+  <dimen name="length_40">
+    35.56dp
+  </dimen>
+  <dimen name="length_45">
+    40.0dp
+  </dimen>
+  <dimen name="length_46">
+    40.89dp
+  </dimen>
+  <dimen name="length_47">
+    41.78dp
+  </dimen>
+  <dimen name="length_48">
+    42.67dp
+  </dimen>
+  <dimen name="length_5">
+    4.44dp
+  </dimen>
+  <dimen name="length_50">
+    44.44dp
+  </dimen>
+  <dimen name="length_52">
+    46.22dp
+  </dimen>
+  <dimen name="length_55">
+    48.89dp
+  </dimen>
+  <dimen name="length_6">
+    5.33dp
+  </dimen>
+  <dimen name="length_60">
+    53.33dp
+  </dimen>
+  <dimen name="length_65">
+    57.78dp
+  </dimen>
+  <dimen name="length_7">
+    6.22dp
+  </dimen>
+  <dimen name="length_70">
+    62.22dp
+  </dimen>
+  <dimen name="length_72">
+    64.0dp
+  </dimen>
+  <dimen name="length_75">
+    66.67dp
+  </dimen>
+  <dimen name="length_8">
+    7.11dp
+  </dimen>
+  <dimen name="length_80">
+    71.11dp
+  </dimen>
+  <dimen name="length_85">
+    75.56dp
+  </dimen>
+  <dimen name="length_9">
+    8.0dp
+  </dimen>
+  <dimen name="length_90">
+    80.0dp
+  </dimen>
+  <dimen name="length_94">
+    83.56dp
+  </dimen>
+  <dimen name="textsize_12">
+    10.67sp
+  </dimen>
+  <dimen name="textsize_13">
+    11.56sp
+  </dimen>
+  <dimen name="textsize_14">
+    12.44sp
+  </dimen>
+  <dimen name="textsize_15">
+    13.33sp
+  </dimen>
+  <dimen name="textsize_16">
+    14.22sp
+  </dimen>
+  <dimen name="textsize_18">
+    16.0sp
+  </dimen>
+  <dimen name="d_1">
+    0.89dp
+  </dimen>
+  <dimen name="d_10">
+    8.89dp
+  </dimen>
+  <dimen name="d_100">
+    88.89dp
+  </dimen>
+  <dimen name="d_115">
+    102.22dp
+  </dimen>
+  <dimen name="d_12">
+    10.67dp
+  </dimen>
+  <dimen name="d_13">
+    11.56dp
+  </dimen>
+  <dimen name="d_130">
+    115.56dp
+  </dimen>
+  <dimen name="d_14">
+    12.44dp
+  </dimen>
+  <dimen name="d_15">
+    13.33dp
+  </dimen>
+  <dimen name="d_160">
+    142.22dp
+  </dimen>
+  <dimen name="d_2">
+    1.78dp
+  </dimen>
+  <dimen name="d_20">
+    17.78dp
+  </dimen>
+  <dimen name="d_24">
+    21.33dp
+  </dimen>
+  <dimen name="d_25">
+    22.22dp
+  </dimen>
+  <dimen name="d_28">
+    24.89dp
+  </dimen>
+  <dimen name="d_3">
+    2.67dp
+  </dimen>
+  <dimen name="d_4">
+    3.56dp
+  </dimen>
+  <dimen name="d_46">
+    40.89dp
+  </dimen>
+  <dimen name="d_5">
+    4.44dp
+  </dimen>
+  <dimen name="d_6">
+    5.33dp
+  </dimen>
+  <dimen name="d_72">
+    64.0dp
+  </dimen>
+  <dimen name="d_8">
+    7.11dp
+  </dimen>
+  <dimen name="d_80">
+    71.11dp
+  </dimen>
+  <dimen name="d_138">
+    122.67dp
+  </dimen>
+  <dimen name="d_230">
+    204.44dp
+  </dimen>
+  <dimen name="__picker_item_camera_size">
+    71.11dp
+  </dimen>
+  <dimen name="__picker_item_directory_height">
+    71.11dp
+  </dimen>
+  <dimen name="__picker_item_photo_size">
+    71.11dp
+  </dimen>
+  <dimen name="__picker_iwf_actionBarSize">
+    42.67dp
+  </dimen>
+  <dimen name="abc_action_bar_content_inset_material">
+    14.22dp
+  </dimen>
+  <dimen name="abc_action_bar_content_inset_with_nav">
+    64.0dp
+  </dimen>
+  <dimen name="abc_action_bar_default_height_material">
+    49.78dp
+  </dimen>
+  <dimen name="abc_action_bar_default_padding_end_material">
+    0.0dp
+  </dimen>
+  <dimen name="abc_action_bar_default_padding_start_material">
+    0.0dp
+  </dimen>
+  <dimen name="abc_action_bar_elevation_material">
+    3.56dp
+  </dimen>
+  <dimen name="abc_action_bar_icon_vertical_padding_material">
+    14.22dp
+  </dimen>
+  <dimen name="abc_action_bar_overflow_padding_end_material">
+    8.89dp
+  </dimen>
+  <dimen name="abc_action_bar_overflow_padding_start_material">
+    5.33dp
+  </dimen>
+  <dimen name="abc_action_bar_stacked_max_height">
+    42.67dp
+  </dimen>
+  <dimen name="abc_action_bar_stacked_tab_max_width">
+    160.0dp
+  </dimen>
+  <dimen name="abc_action_bar_subtitle_bottom_margin_material">
+    4.44dp
+  </dimen>
+  <dimen name="abc_action_bar_subtitle_top_margin_material">
+    -2.67dp
+  </dimen>
+  <dimen name="abc_action_button_min_height_material">
+    42.67dp
+  </dimen>
+  <dimen name="abc_action_button_min_width_material">
+    42.67dp
+  </dimen>
+  <dimen name="abc_action_button_min_width_overflow_material">
+    32.0dp
+  </dimen>
+  <dimen name="abc_alert_dialog_button_bar_height">
+    42.67dp
+  </dimen>
+  <dimen name="abc_alert_dialog_button_dimen">
+    42.67dp
+  </dimen>
+  <item name="abc_button_inset_horizontal_material" type="dimen">
+    
+    
+    @dimen/abc_control_inset_material
+  
+  
+  </item>
+  <dimen name="abc_button_inset_vertical_material">
+    5.33dp
+  </dimen>
+  <dimen name="abc_button_padding_horizontal_material">
+    7.11dp
+  </dimen>
+  <item name="abc_button_padding_vertical_material" type="dimen">
+    
+    
+    @dimen/abc_control_padding_material
+  
+  
+  </item>
+  <dimen name="abc_cascading_menus_min_smallest_width">
+    640.0dp
+  </dimen>
+  <dimen name="abc_config_prefDialogWidth">
+    284.44dp
+  </dimen>
+  <dimen name="abc_control_corner_material">
+    1.78dp
+  </dimen>
+  <dimen name="abc_control_inset_material">
+    3.56dp
+  </dimen>
+  <dimen name="abc_control_padding_material">
+    3.56dp
+  </dimen>
+  <item name="abc_dialog_fixed_height_major" type="dimen">
+    
+    79.99999%
+  
+  </item>
+  <item name="abc_dialog_fixed_height_minor" type="dimen">
+    
+    100.0%
+  
+  </item>
+  <dimen name="abc_dialog_fixed_width_major">
+    284.44dp
+  </dimen>
+  <dimen name="abc_dialog_fixed_width_minor">
+    284.44dp
+  </dimen>
+  <dimen name="abc_dialog_list_padding_bottom_no_buttons">
+    7.11dp
+  </dimen>
+  <dimen name="abc_dialog_list_padding_top_no_title">
+    7.11dp
+  </dimen>
+  <item name="abc_dialog_min_width_major" type="dimen">
+    
+    65.0%
+  
+  </item>
+  <item name="abc_dialog_min_width_minor" type="dimen">
+    
+    95.00001%
+  
+  </item>
+  <dimen name="abc_dialog_padding_material">
+    21.33dp
+  </dimen>
+  <dimen name="abc_dialog_padding_top_material">
+    16.0dp
+  </dimen>
+  <dimen name="abc_dialog_title_divider_material">
+    7.11dp
+  </dimen>
+  <item name="abc_disabled_alpha_material_dark" type="dimen">
+    
+    0.3
+  
+  </item>
+  <item name="abc_disabled_alpha_material_light" type="dimen">
+    
+    0.26
+  
+  </item>
+  <dimen name="abc_dropdownitem_icon_width">
+    28.44dp
+  </dimen>
+  <dimen name="abc_dropdownitem_text_padding_left">
+    7.11dp
+  </dimen>
+  <dimen name="abc_dropdownitem_text_padding_right">
+    7.11dp
+  </dimen>
+  <dimen name="abc_edit_text_inset_bottom_material">
+    6.22dp
+  </dimen>
+  <dimen name="abc_edit_text_inset_horizontal_material">
+    3.56dp
+  </dimen>
+  <dimen name="abc_edit_text_inset_top_material">
+    8.89dp
+  </dimen>
+  <dimen name="abc_floating_window_z">
+    14.22dp
+  </dimen>
+  <item name="abc_list_item_padding_horizontal_material" type="dimen">
+    
+    
+    @dimen/abc_action_bar_content_inset_material
+  
+  
+  </item>
+  <dimen name="abc_panel_menu_list_width">
+    263.11dp
+  </dimen>
+  <dimen name="abc_progress_bar_height_material">
+    3.56dp
+  </dimen>
+  <dimen name="abc_search_view_preferred_height">
+    42.67dp
+  </dimen>
+  <dimen name="abc_search_view_preferred_width">
+    284.44dp
+  </dimen>
+  <dimen name="abc_seekbar_track_background_height_material">
+    1.78dp
+  </dimen>
+  <dimen name="abc_seekbar_track_progress_height_material">
+    1.78dp
+  </dimen>
+  <dimen name="abc_select_dialog_padding_start_material">
+    17.78dp
+  </dimen>
+  <dimen name="abc_switch_padding">
+    0.0px
+  </dimen>
+  <dimen name="abc_text_size_body_1_material">
+    12.44sp
+  </dimen>
+  <dimen name="abc_text_size_body_2_material">
+    12.44sp
+  </dimen>
+  <dimen name="abc_text_size_button_material">
+    12.44sp
+  </dimen>
+  <dimen name="abc_text_size_caption_material">
+    10.67sp
+  </dimen>
+  <dimen name="abc_text_size_display_1_material">
+    30.22sp
+  </dimen>
+  <dimen name="abc_text_size_display_2_material">
+    40.0sp
+  </dimen>
+  <dimen name="abc_text_size_display_3_material">
+    49.78sp
+  </dimen>
+  <dimen name="abc_text_size_display_4_material">
+    99.56sp
+  </dimen>
+  <dimen name="abc_text_size_headline_material">
+    21.33sp
+  </dimen>
+  <dimen name="abc_text_size_large_material">
+    19.56sp
+  </dimen>
+  <dimen name="abc_text_size_medium_material">
+    16.0sp
+  </dimen>
+  <dimen name="abc_text_size_menu_header_material">
+    12.44sp
+  </dimen>
+  <dimen name="abc_text_size_menu_material">
+    14.22sp
+  </dimen>
+  <dimen name="abc_text_size_small_material">
+    12.44sp
+  </dimen>
+  <dimen name="abc_text_size_subhead_material">
+    14.22sp
+  </dimen>
+  <dimen name="abc_text_size_subtitle_material_toolbar">
+    14.22dp
+  </dimen>
+  <dimen name="abc_text_size_title_material">
+    17.78sp
+  </dimen>
+  <dimen name="abc_text_size_title_material_toolbar">
+    17.78dp
+  </dimen>
+  <dimen name="activity_horizontal_margin">
+    14.22dp
+  </dimen>
+  <dimen name="activity_vertical_margin">
+    14.22dp
+  </dimen>
+  <dimen name="app_bar_height">
+    71.11dp
+  </dimen>
+  <dimen name="appbar_padding_top">
+    7.11dp
+  </dimen>
+  <dimen name="bar_height">
+    28.44dp
+  </dimen>
+  <dimen name="bar_tool_btn_width">
+    49.78dp
+  </dimen>
+  <dimen name="beauty_content_item_margin">
+    13.33dp
+  </dimen>
+  <dimen name="beauty_content_margin">
+    13.33dp
+  </dimen>
+  <dimen name="beauty_fragme_margin">
+    4.44dp
+  </dimen>
+  <dimen name="button_frame_margin">
+    14.22dp
+  </dimen>
+  <dimen name="button_height">
+    39.11dp
+  </dimen>
+  <dimen name="button_height_customview">
+    49.78dp
+  </dimen>
+  <dimen name="button_min_width">
+    49.78dp
+  </dimen>
+  <dimen name="button_padding">
+    7.11dp
+  </dimen>
+  <dimen name="button_text_size">
+    12.44sp
+  </dimen>
+  <dimen name="button_textsize">
+    12.44sp
+  </dimen>
+  <dimen name="calendar_color_recyclerview_height">
+    28.44dp
+  </dimen>
+  <dimen name="calendar_day_headers_paddingbottom">
+    3.56dp
+  </dimen>
+  <dimen name="calendar_month_title_bottommargin">
+    3.56dp
+  </dimen>
+  <dimen name="calendar_month_topmargin">
+    14.22dp
+  </dimen>
+  <dimen name="calendar_text_medium">
+    16.0sp
+  </dimen>
+  <dimen name="calendar_text_small">
+    12.44sp
+  </dimen>
+  <dimen name="calendar_text_small_13">
+    11.56sp
+  </dimen>
+  <dimen name="call_button_padding_left">
+    22.22dp
+  </dimen>
+  <dimen name="call_button_padding_right">
+    22.22dp
+  </dimen>
+  <dimen name="call_button_padding_vertical">
+    8.89dp
+  </dimen>
+  <dimen name="card_width">
+    177.78dp
+  </dimen>
+  <dimen name="cardview_compat_inset_shadow">
+    0.89dp
+  </dimen>
+  <dimen name="cardview_default_elevation">
+    1.78dp
+  </dimen>
+  <dimen name="cardview_default_radius">
+    1.78dp
+  </dimen>
+  <dimen name="cardview_margin">
+    0.0dp
+  </dimen>
+  <dimen name="change_tag_corners">
+    11.56dp
+  </dimen>
+  <dimen name="changetag_height_default">
+    26.67dp
+  </dimen>
+  <dimen name="chat_83">
+    73.78dp
+  </dimen>
+  <dimen name="chat_diary_width">
+    88.89dp
+  </dimen>
+  <dimen name="chat_img_width">
+    71.11dp
+  </dimen>
+  <dimen name="chat_line_height">
+    115.56dp
+  </dimen>
+  <dimen name="chat_line_width">
+    208.0dp
+  </dimen>
+  <dimen name="chat_margin_top">
+    8.89dp
+  </dimen>
+  <dimen name="chat_pop_btn_height">
+    40.0dp
+  </dimen>
+  <dimen name="chat_pop_btn_text_size">
+    16.0sp
+  </dimen>
+  <dimen name="chat_pop_margin_top">
+    11.56dp
+  </dimen>
+  <dimen name="chat_text_width">
+    209.78dp
+  </dimen>
+  <dimen name="chat_view_height">
+    0.89px
+  </dimen>
+  <dimen name="compat_button_inset_horizontal_material">
+    3.56dp
+  </dimen>
+  <dimen name="compat_button_inset_vertical_material">
+    5.33dp
+  </dimen>
+  <dimen name="compat_button_padding_horizontal_material">
+    7.11dp
+  </dimen>
+  <dimen name="compat_button_padding_vertical_material">
+    3.56dp
+  </dimen>
+  <dimen name="compat_control_corner_material">
+    1.78dp
+  </dimen>
+  <dimen name="content_size">
+    14.22sp
+  </dimen>
+  <dimen name="content_textsize">
+    14.22sp
+  </dimen>
+  <dimen name="d_103">
+    91.56dp
+  </dimen>
+  <dimen name="d_105">
+    93.33dp
+  </dimen>
+  <dimen name="d_106">
+    94.22dp
+  </dimen>
+  <dimen name="d_108">
+    96.0dp
+  </dimen>
+  <dimen name="d_11">
+    9.78dp
+  </dimen>
+  <dimen name="d_110">
+    97.78dp
+  </dimen>
+  <dimen name="d_112">
+    99.56dp
+  </dimen>
+  <dimen name="d_114">
+    101.33dp
+  </dimen>
+  <dimen name="d_116">
+    103.11dp
+  </dimen>
+  <dimen name="d_118">
+    104.89dp
+  </dimen>
+  <dimen name="d_119">
+    105.78dp
+  </dimen>
+  <dimen name="d_120">
+    106.67dp
+  </dimen>
+  <dimen name="d_122">
+    108.44dp
+  </dimen>
+  <dimen name="d_125">
+    111.11dp
+  </dimen>
+  <dimen name="d_128">
+    113.78dp
+  </dimen>
+  <dimen name="d_129">
+    114.67dp
+  </dimen>
+  <dimen name="d_12_5">
+    11.11dp
+  </dimen>
+  <dimen name="d_132">
+    117.33dp
+  </dimen>
+  <dimen name="d_134">
+    119.11dp
+  </dimen>
+  <dimen name="d_135">
+    120.0dp
+  </dimen>
+  <dimen name="d_137">
+    121.78dp
+  </dimen>
+  <dimen name="d_140">
+    124.44dp
+  </dimen>
+  <dimen name="d_143">
+    127.11dp
+  </dimen>
+  <dimen name="d_145">
+    128.89dp
+  </dimen>
+  <dimen name="d_147">
+    130.67dp
+  </dimen>
+  <dimen name="d_150">
+    133.33dp
+  </dimen>
+  <dimen name="d_154">
+    136.89dp
+  </dimen>
+  <dimen name="d_155">
+    137.78dp
+  </dimen>
+  <dimen name="d_16">
+    14.22dp
+  </dimen>
+  <dimen name="d_165">
+    146.67dp
+  </dimen>
+  <dimen name="d_168">
+    149.33dp
+  </dimen>
+  <dimen name="d_17">
+    15.11dp
+  </dimen>
+  <dimen name="d_170">
+    151.11dp
+  </dimen>
+  <dimen name="d_172">
+    152.89dp
+  </dimen>
+  <dimen name="d_174">
+    154.67dp
+  </dimen>
+  <dimen name="d_176">
+    156.44dp
+  </dimen>
+  <dimen name="d_178">
+    158.22dp
+  </dimen>
+  <dimen name="d_18">
+    16.0dp
+  </dimen>
+  <dimen name="d_180">
+    160.0dp
+  </dimen>
+  <dimen name="d_186">
+    165.33dp
+  </dimen>
+  <dimen name="d_188">
+    167.11dp
+  </dimen>
+  <dimen name="d_19">
+    16.89dp
+  </dimen>
+  <dimen name="d_192">
+    170.67dp
+  </dimen>
+  <dimen name="d_194">
+    172.44dp
+  </dimen>
+  <dimen name="d_196">
+    174.22dp
+  </dimen>
+  <dimen name="d_1_5">
+    1.33dp
+  </dimen>
+  <dimen name="d_200">
+    177.78dp
+  </dimen>
+  <dimen name="d_205">
+    182.22dp
+  </dimen>
+  <dimen name="d_21">
+    18.67dp
+  </dimen>
+  <dimen name="d_22">
+    19.56dp
+  </dimen>
+  <dimen name="d_220">
+    195.56dp
+  </dimen>
+  <dimen name="d_225">
+    200.0dp
+  </dimen>
+  <dimen name="d_235">
+    208.89dp
+  </dimen>
+  <dimen name="d_238">
+    211.56dp
+  </dimen>
+  <dimen name="d_240">
+    213.33dp
+  </dimen>
+  <dimen name="d_243">
+    216.0dp
+  </dimen>
+  <dimen name="d_245">
+    217.78dp
+  </dimen>
+  <dimen name="d_247">
+    219.56dp
+  </dimen>
+  <dimen name="d_248">
+    220.44dp
+  </dimen>
+  <dimen name="d_250">
+    222.22dp
+  </dimen>
+  <dimen name="d_26">
+    23.11dp
+  </dimen>
+  <dimen name="d_260">
+    231.11dp
+  </dimen>
+  <dimen name="d_267">
+    237.33dp
+  </dimen>
+  <dimen name="d_268">
+    238.22dp
+  </dimen>
+  <dimen name="d_27">
+    24.0dp
+  </dimen>
+  <dimen name="d_277">
+    246.22dp
+  </dimen>
+  <dimen name="d_280">
+    248.89dp
+  </dimen>
+  <dimen name="d_286">
+    254.22dp
+  </dimen>
+  <dimen name="d_292">
+    259.56dp
+  </dimen>
+  <dimen name="d_30">
+    26.67dp
+  </dimen>
+  <dimen name="d_31">
+    27.56dp
+  </dimen>
+  <dimen name="d_32">
+    28.44dp
+  </dimen>
+  <dimen name="d_327">
+    290.67dp
+  </dimen>
+  <dimen name="d_33">
+    29.33dp
+  </dimen>
+  <dimen name="d_331">
+    294.22dp
+  </dimen>
+  <dimen name="d_336">
+    298.67dp
+  </dimen>
+  <dimen name="d_337">
+    299.56dp
+  </dimen>
+  <dimen name="d_34">
+    30.22dp
+  </dimen>
+  <dimen name="d_341">
+    303.11dp
+  </dimen>
+  <dimen name="d_345">
+    306.67dp
+  </dimen>
+  <dimen name="d_35">
+    31.11dp
+  </dimen>
+  <dimen name="d_350">
+    311.11dp
+  </dimen>
+  <dimen name="d_36">
+    32.0dp
+  </dimen>
+  <dimen name="d_37">
+    32.89dp
+  </dimen>
+  <dimen name="d_38">
+    33.78dp
+  </dimen>
+  <dimen name="d_39">
+    34.67dp
+  </dimen>
+  <dimen name="d_40">
+    35.56dp
+  </dimen>
+  <dimen name="d_41">
+    36.44dp
+  </dimen>
+  <dimen name="d_42">
+    37.33dp
+  </dimen>
+  <dimen name="d_44">
+    39.11dp
+  </dimen>
+  <dimen name="d_45">
+    40.0dp
+  </dimen>
+  <dimen name="d_48">
+    42.67dp
+  </dimen>
+  <dimen name="d_49">
+    43.56dp
+  </dimen>
+  <dimen name="d_50">
+    44.44dp
+  </dimen>
+  <dimen name="d_500">
+    444.44dp
+  </dimen>
+  <dimen name="d_51">
+    45.33dp
+  </dimen>
+  <dimen name="d_52">
+    46.22dp
+  </dimen>
+  <dimen name="d_54">
+    48.0dp
+  </dimen>
+  <dimen name="d_55">
+    48.89dp
+  </dimen>
+  <dimen name="d_56">
+    49.78dp
+  </dimen>
+  <dimen name="d_57">
+    50.67dp
+  </dimen>
+  <dimen name="d_60">
+    53.33dp
+  </dimen>
+  <dimen name="d_62">
+    55.11dp
+  </dimen>
+  <dimen name="d_63">
+    56.0dp
+  </dimen>
+  <dimen name="d_64">
+    56.89dp
+  </dimen>
+  <dimen name="d_65">
+    57.78dp
+  </dimen>
+  <dimen name="d_66">
+    58.67dp
+  </dimen>
+  <dimen name="d_68">
+    60.44dp
+  </dimen>
+  <dimen name="d_6_5">
+    5.78dp
+  </dimen>
+  <dimen name="d_7">
+    6.22dp
+  </dimen>
+  <dimen name="d_70">
+    62.22dp
+  </dimen>
+  <dimen name="d_73">
+    64.89dp
+  </dimen>
+  <dimen name="d_74">
+    65.78dp
+  </dimen>
+  <dimen name="d_75">
+    66.67dp
+  </dimen>
+  <dimen name="d_78">
+    69.33dp
+  </dimen>
+  <dimen name="d_82">
+    72.89dp
+  </dimen>
+  <dimen name="d_83">
+    73.78dp
+  </dimen>
+  <dimen name="d_84">
+    74.67dp
+  </dimen>
+  <dimen name="d_85">
+    75.56dp
+  </dimen>
+  <dimen name="d_87">
+    77.33dp
+  </dimen>
+  <dimen name="d_88">
+    78.22dp
+  </dimen>
+  <dimen name="d_89">
+    79.11dp
+  </dimen>
+  <dimen name="d_9">
+    8.0dp
+  </dimen>
+  <dimen name="d_90">
+    80.0dp
+  </dimen>
+  <dimen name="d_91">
+    80.89dp
+  </dimen>
+  <dimen name="d_92">
+    81.78dp
+  </dimen>
+  <dimen name="d_94">
+    83.56dp
+  </dimen>
+  <dimen name="d_95">
+    84.44dp
+  </dimen>
+  <dimen name="d_96">
+    85.33dp
+  </dimen>
+  <dimen name="d_98">
+    87.11dp
+  </dimen>
+  <dimen name="def_height">
+    44.44dp
+  </dimen>
+  <dimen name="default_circle_indicator_radius">
+    2.67dp
+  </dimen>
+  <dimen name="default_circle_indicator_stroke_width">
+    0.89dp
+  </dimen>
+  <dimen name="default_line_indicator_gap_width">
+    3.56dp
+  </dimen>
+  <dimen name="default_line_indicator_line_width">
+    10.67dp
+  </dimen>
+  <dimen name="default_line_indicator_stroke_width">
+    0.89dp
+  </dimen>
+  <dimen name="default_title_indicator_clip_padding">
+    3.56dp
+  </dimen>
+  <dimen name="default_title_indicator_footer_indicator_height">
+    3.56dp
+  </dimen>
+  <dimen name="default_title_indicator_footer_indicator_underline_padding">
+    17.78dp
+  </dimen>
+  <dimen name="default_title_indicator_footer_line_height">
+    1.78dp
+  </dimen>
+  <dimen name="default_title_indicator_footer_padding">
+    6.22dp
+  </dimen>
+  <dimen name="default_title_indicator_text_size">
+    13.33dp
+  </dimen>
+  <dimen name="default_title_indicator_title_padding">
+    4.44dp
+  </dimen>
+  <dimen name="default_title_indicator_top_padding">
+    6.22dp
+  </dimen>
+  <dimen name="design_appbar_elevation">
+    3.56dp
+  </dimen>
+  <dimen name="design_bottom_navigation_active_item_max_width">
+    149.33dp
+  </dimen>
+  <dimen name="design_bottom_navigation_active_text_size">
+    12.44sp
+  </dimen>
+  <dimen name="design_bottom_navigation_elevation">
+    7.11dp
+  </dimen>
+  <dimen name="design_bottom_navigation_height">
+    49.78dp
+  </dimen>
+  <dimen name="design_bottom_navigation_item_max_width">
+    85.33dp
+  </dimen>
+  <dimen name="design_bottom_navigation_item_min_width">
+    49.78dp
+  </dimen>
+  <dimen name="design_bottom_navigation_margin">
+    7.11dp
+  </dimen>
+  <dimen name="design_bottom_navigation_shadow_height">
+    0.89dp
+  </dimen>
+  <dimen name="design_bottom_navigation_text_size">
+    10.67sp
+  </dimen>
+  <dimen name="design_bottom_sheet_modal_elevation">
+    14.22dp
+  </dimen>
+  <dimen name="design_bottom_sheet_peek_height_min">
+    56.89dp
+  </dimen>
+  <dimen name="design_fab_border_width">
+    0.44dp
+  </dimen>
+  <dimen name="design_fab_elevation">
+    5.33dp
+  </dimen>
+  <dimen name="design_fab_image_size">
+    21.33dp
+  </dimen>
+  <dimen name="design_fab_size_mini">
+    35.56dp
+  </dimen>
+  <dimen name="design_fab_size_normal">
+    49.78dp
+  </dimen>
+  <dimen name="design_fab_translation_z_pressed">
+    5.33dp
+  </dimen>
+  <dimen name="design_navigation_elevation">
+    14.22dp
+  </dimen>
+  <dimen name="design_navigation_icon_padding">
+    28.44dp
+  </dimen>
+  <dimen name="design_navigation_icon_size">
+    21.33dp
+  </dimen>
+  <dimen name="design_navigation_max_width">
+    248.89dp
+  </dimen>
+  <dimen name="design_navigation_padding_bottom">
+    7.11dp
+  </dimen>
+  <dimen name="design_navigation_separator_vertical_padding">
+    7.11dp
+  </dimen>
+  <dimen name="design_snackbar_action_inline_max_width">
+    113.78dp
+  </dimen>
+  <dimen name="design_snackbar_background_corner_radius">
+    0.0dp
+  </dimen>
+  <dimen name="design_snackbar_elevation">
+    5.33dp
+  </dimen>
+  <dimen name="design_snackbar_extra_spacing_horizontal">
+    0.0dp
+  </dimen>
+  <dimen name="design_snackbar_max_width">
+    -0.89px
+  </dimen>
+  <dimen name="design_snackbar_min_width">
+    -0.89px
+  </dimen>
+  <dimen name="design_snackbar_padding_horizontal">
+    10.67dp
+  </dimen>
+  <dimen name="design_snackbar_padding_vertical">
+    12.44dp
+  </dimen>
+  <dimen name="design_snackbar_padding_vertical_2lines">
+    21.33dp
+  </dimen>
+  <dimen name="design_snackbar_text_size">
+    12.44sp
+  </dimen>
+  <dimen name="design_tab_max_width">
+    234.67dp
+  </dimen>
+  <dimen name="design_tab_scrollable_min_width">
+    64.0dp
+  </dimen>
+  <dimen name="design_tab_text_size">
+    12.44sp
+  </dimen>
+  <dimen name="design_tab_text_size_2line">
+    10.67sp
+  </dimen>
+  <dimen name="dialog_button">
+    15.11dp
+  </dimen>
+  <dimen name="dialog_frame_margin">
+    21.33dp
+  </dimen>
+  <dimen name="dialog_line_tip_margin_bottom">
+    2.67dp
+  </dimen>
+  <dimen name="dialog_message_margin_bottom">
+    26.67dp
+  </dimen>
+  <dimen name="dialog_padding_left_right">
+    16.0dp
+  </dimen>
+  <dimen name="dialog_shape_corners">
+    10.67dp
+  </dimen>
+  <dimen name="dialog_title_divider_height">
+    1.78dp
+  </dimen>
+  <item name="disabled_alpha_material_dark" type="dimen">
+    
+    0.3
+  
+  </item>
+  <item name="disabled_alpha_material_light" type="dimen">
+    
+    0.26
+  
+  </item>
+  <dimen name="divider">
+    0.89px
+  </dimen>
+  <dimen name="dp_05">
+    0.44dp
+  </dimen>
+  <dimen name="dp_10">
+    8.89dp
+  </dimen>
+  <dimen name="dp_12">
+    10.67dp
+  </dimen>
+  <dimen name="dp_13">
+    11.56dp
+  </dimen>
+  <dimen name="dp_15">
+    13.33dp
+  </dimen>
+  <dimen name="dp_150">
+    133.33dp
+  </dimen>
+  <dimen name="dp_17">
+    15.11dp
+  </dimen>
+  <dimen name="dp_190">
+    168.89dp
+  </dimen>
+  <dimen name="dp_20">
+    17.78dp
+  </dimen>
+  <dimen name="dp_210">
+    186.67dp
+  </dimen>
+  <dimen name="dp_25">
+    22.22dp
+  </dimen>
+  <dimen name="dp_26">
+    23.11dp
+  </dimen>
+  <dimen name="dp_27">
+    24.0dp
+  </dimen>
+  <dimen name="dp_3">
+    2.67dp
+  </dimen>
+  <dimen name="dp_30">
+    26.67dp
+  </dimen>
+  <dimen name="dp_34">
+    30.22dp
+  </dimen>
+  <dimen name="dp_38">
+    33.78dp
+  </dimen>
+  <dimen name="dp_4">
+    3.56dp
+  </dimen>
+  <dimen name="dp_40">
+    35.56dp
+  </dimen>
+  <dimen name="dp_5">
+    4.44dp
+  </dimen>
+  <dimen name="dp_50">
+    44.44dp
+  </dimen>
+  <dimen name="dp_55">
+    48.89dp
+  </dimen>
+  <dimen name="dp_6">
+    5.33dp
+  </dimen>
+  <dimen name="dp_65">
+    57.78dp
+  </dimen>
+  <dimen name="dp_7">
+    6.22dp
+  </dimen>
+  <dimen name="dp_72">
+    64.0dp
+  </dimen>
+  <dimen name="dp_76">
+    67.56dp
+  </dimen>
+  <dimen name="dp_8">
+    7.11dp
+  </dimen>
+  <dimen name="dp_86">
+    76.44dp
+  </dimen>
+  <dimen name="drop_down_list_footer_button_height">
+    42.67dp
+  </dimen>
+  <dimen name="drop_down_list_footer_button_margin_left">
+    7.11dp
+  </dimen>
+  <dimen name="drop_down_list_footer_progress_bar_height">
+    32.0dp
+  </dimen>
+  <dimen name="drop_down_list_header_padding_bottom">
+    13.33dp
+  </dimen>
+  <dimen name="drop_down_list_header_padding_top">
+    10.67dp
+  </dimen>
+  <dimen name="drop_down_list_header_progress_bar_height">
+    32.0dp
+  </dimen>
+  <dimen name="drop_down_list_header_release_min_distance">
+    17.78dp
+  </dimen>
+  <dimen name="emui_master_body_2">
+    11.56sp
+  </dimen>
+  <dimen name="emui_master_subtitle">
+    13.33sp
+  </dimen>
+  <dimen name="expand_tab_eara_height">
+    337.78dp
+  </dimen>
+  <dimen name="expand_tab_item_height">
+    40.0dp
+  </dimen>
+  <dimen name="fab_actions_spacing">
+    14.22dp
+  </dimen>
+  <dimen name="fab_icon_size">
+    21.33dp
+  </dimen>
+  <dimen name="fab_labels_margin">
+    7.11dp
+  </dimen>
+  <dimen name="fab_margin">
+    14.22dp
+  </dimen>
+  <dimen name="fab_plus_icon_size">
+    12.44dp
+  </dimen>
+  <dimen name="fab_plus_icon_stroke">
+    1.78dp
+  </dimen>
+  <dimen name="fab_shadow_offset">
+    2.67dp
+  </dimen>
+  <dimen name="fab_shadow_radius">
+    8.0dp
+  </dimen>
+  <dimen name="fab_size_mini">
+    35.56dp
+  </dimen>
+  <dimen name="fab_size_normal">
+    49.78dp
+  </dimen>
+  <dimen name="fab_stroke_width">
+    0.89dp
+  </dimen>
+  <dimen name="face_map_padding">
+    62.22dp
+  </dimen>
+  <dimen name="face_map_padding_report">
+    42.67dp
+  </dimen>
+  <dimen name="face_map_text_blow">
+    19.56dp
+  </dimen>
+  <dimen name="face_map_text_top">
+    10.67dp
+  </dimen>
+  <dimen name="face_map_text_top_widht">
+    32.0dp
+  </dimen>
+  <dimen name="fastscroll_default_thickness">
+    7.11dp
+  </dimen>
+  <dimen name="fastscroll_margin">
+    0.0dp
+  </dimen>
+  <dimen name="fastscroll_minimum_range">
+    44.44dp
+  </dimen>
+  <dimen name="field_margin_right">
+    4.44dp
+  </dimen>
+  <dimen name="field_textsize">
+    12.44sp
+  </dimen>
+  <dimen name="floating_action_button_elevation">
+    3.56dp
+  </dimen>
+  <dimen name="floating_action_button_margin_mini">
+    23.11dp
+  </dimen>
+  <dimen name="floating_action_button_margin_mini_minus">
+    -23.11dp
+  </dimen>
+  <dimen name="floating_action_button_margin_normal">
+    30.22dp
+  </dimen>
+  <dimen name="floating_action_button_margin_normal_minus">
+    -30.22dp
+  </dimen>
+  <dimen name="floating_action_button_shadow_radius">
+    5.33dp
+  </dimen>
+  <dimen name="floating_action_button_size_mini">
+    35.56dp
+  </dimen>
+  <dimen name="floating_action_button_size_normal">
+    49.78dp
+  </dimen>
+  <dimen name="font_size_10">
+    8.89dp
+  </dimen>
+  <dimen name="font_size_body">
+    12.44dp
+  </dimen>
+  <dimen name="font_size_caption">
+    9.78dp
+  </dimen>
+  <dimen name="half_padding">
+    3.56dp
+  </dimen>
+  <dimen name="head_bar_height">
+    40.0dp
+  </dimen>
+  <dimen name="header_footer_left_right_padding">
+    21.33dp
+  </dimen>
+  <dimen name="header_footer_top_bottom_padding">
+    10.67dp
+  </dimen>
+  <dimen name="heart_anim_bezier_x_rand">
+    35.56dp
+  </dimen>
+  <dimen name="heart_anim_init_x">
+    31.11dp
+  </dimen>
+  <dimen name="heart_anim_init_y">
+    31.11dp
+  </dimen>
+  <dimen name="heart_anim_length">
+    88.89dp
+  </dimen>
+  <dimen name="heart_anim_length_rand">
+    133.33dp
+  </dimen>
+  <dimen name="heart_anim_x_point_factor">
+    26.67dp
+  </dimen>
+  <dimen name="heart_size_height">
+    24.27dp
+  </dimen>
+  <dimen name="heart_size_width">
+    28.89dp
+  </dimen>
+  <dimen name="height_row_weixin">
+    52.44dp
+  </dimen>
+  <dimen name="height_top_bar">
+    40.89dp
+  </dimen>
+  <item name="highlight_alpha_material_colored" type="dimen">
+    
+    0.26
+  
+  </item>
+  <item name="highlight_alpha_material_dark" type="dimen">
+    
+    0.2
+  
+  </item>
+  <item name="highlight_alpha_material_light" type="dimen">
+    
+    0.12
+  
+  </item>
+  <item name="hint_alpha_material_dark" type="dimen">
+    
+    0.5
+  
+  </item>
+  <item name="hint_alpha_material_light" type="dimen">
+    
+    0.38
+  
+  </item>
+  <item name="hint_pressed_alpha_material_dark" type="dimen">
+    
+    0.7
+  
+  </item>
+  <item name="hint_pressed_alpha_material_light" type="dimen">
+    
+    0.54
+  
+  </item>
+  <dimen name="home_feed_user_bg_corner">
+    14.22dp
+  </dimen>
+  <dimen name="home_list_arrow_h">
+    17.78dp
+  </dimen>
+  <dimen name="home_list_arrow_w">
+    10.67dp
+  </dimen>
+  <dimen name="horizontal_corner">
+    8.89dp
+  </dimen>
+  <dimen name="horizontalspit_view_height">
+    0.53dp
+  </dimen>
+  <dimen name="image_thumbnail_size">
+    88.89dp
+  </dimen>
+  <dimen name="image_thumbnail_spacing">
+    0.89dp
+  </dimen>
+  <dimen name="indicator_corner_radius">
+    10.67dp
+  </dimen>
+  <dimen name="indicator_internal_padding">
+    3.56dp
+  </dimen>
+  <dimen name="indicator_margin">
+    8.89dp
+  </dimen>
+  <dimen name="indicator_right_padding">
+    8.89dp
+  </dimen>
+  <dimen name="item_baike_space">
+    13.33dp
+  </dimen>
+  <dimen name="item_emoticon_size_default">
+    28.44dp
+  </dimen>
+  <dimen name="item_touch_helper_max_drag_scroll_per_frame">
+    17.78dp
+  </dimen>
+  <dimen name="item_touch_helper_swipe_escape_max_velocity">
+    711.11dp
+  </dimen>
+  <dimen name="item_touch_helper_swipe_escape_velocity">
+    106.67dp
+  </dimen>
+  <dimen name="jc_progress_dialog_margin_top">
+    71.11dp
+  </dimen>
+  <dimen name="jc_volume_dialog_margin_left">
+    21.33dp
+  </dimen>
+  <dimen name="jz_start_button_w_h_fullscreen">
+    55.11dp
+  </dimen>
+  <dimen name="jz_start_button_w_h_normal">
+    40.0dp
+  </dimen>
+  <dimen name="line_height">
+    0.44dp
+  </dimen>
+  <dimen name="listitem_height">
+    42.67dp
+  </dimen>
+  <dimen name="listitem_textsize">
+    14.22sp
+  </dimen>
+  <dimen name="look_picture_info_height">
+    71.11dp
+  </dimen>
+  <dimen name="margian25">
+    22.22dp
+  </dimen>
+  <dimen name="margian5">
+    4.44dp
+  </dimen>
+  <dimen name="margin_chat_activity">
+    4.44dp
+  </dimen>
+  <dimen name="margin_chat_activity_bottom">
+    17.78dp
+  </dimen>
+  <dimen name="margin_chat_activity_half">
+    3.56dp
+  </dimen>
+  <dimen name="margin_chat_activity_pic">
+    3.56dp
+  </dimen>
+  <dimen name="margin_chat_activity_time_top">
+    0.89dp
+  </dimen>
+  <dimen name="margin_chat_activity_top">
+    13.33dp
+  </dimen>
+  <dimen name="margin_chat_headview">
+    13.33dp
+  </dimen>
+  <dimen name="margin_chat_padding_bottom">
+    17.78dp
+  </dimen>
+  <dimen name="margin_l">
+    14.22dp
+  </dimen>
+  <dimen name="margin_m">
+    7.11dp
+  </dimen>
+  <dimen name="margin_xs">
+    1.78dp
+  </dimen>
+  <dimen name="my_home_message_red_top">
+    4.44dp
+  </dimen>
+  <dimen name="my_home_message_top">
+    8.89dp
+  </dimen>
+  <dimen name="normal_vertical_divider">
+    8.89dp
+  </dimen>
+  <dimen name="notification_action_icon_size">
+    28.44dp
+  </dimen>
+  <dimen name="notification_action_text_size">
+    11.56sp
+  </dimen>
+  <dimen name="notification_big_circle_margin">
+    10.67dp
+  </dimen>
+  <dimen name="notification_content_margin_start">
+    7.11dp
+  </dimen>
+  <dimen name="notification_large_icon_height">
+    56.89dp
+  </dimen>
+  <dimen name="notification_large_icon_width">
+    56.89dp
+  </dimen>
+  <dimen name="notification_main_column_padding_top">
+    8.89dp
+  </dimen>
+  <item name="notification_media_narrow_margin" type="dimen">
+    
+    
+    @dimen/notification_content_margin_start
+  
+  
+  </item>
+  <dimen name="notification_right_icon_size">
+    14.22dp
+  </dimen>
+  <dimen name="notification_right_side_padding_top">
+    3.56dp
+  </dimen>
+  <dimen name="notification_small_icon_background_padding">
+    2.67dp
+  </dimen>
+  <dimen name="notification_small_icon_size_as_large">
+    21.33dp
+  </dimen>
+  <dimen name="notification_subtext_size">
+    11.56sp
+  </dimen>
+  <dimen name="notification_top_pad">
+    8.89dp
+  </dimen>
+  <dimen name="notification_top_pad_large_text">
+    4.44dp
+  </dimen>
+  <dimen name="offsetValue">
+    13.33dp
+  </dimen>
+  <dimen name="padding_search_bar">
+    4.44dp
+  </dimen>
+  <dimen name="percent_text_size">
+    19.56sp
+  </dimen>
+  <dimen name="percent_text_size_default">
+    7.11sp
+  </dimen>
+  <dimen name="percent_text_size_large">
+    10.67sp
+  </dimen>
+  <dimen name="percent_text_size_small">
+    3.56sp
+  </dimen>
+  <dimen name="pgc_height">
+    139.56dp
+  </dimen>
+  <dimen name="pickerview_textsize">
+    17.78sp
+  </dimen>
+  <dimen name="pickerview_topbar_btn_textsize">
+    15.11sp
+  </dimen>
+  <dimen name="pickerview_topbar_height">
+    39.11dp
+  </dimen>
+  <dimen name="pickerview_topbar_padding">
+    17.78dp
+  </dimen>
+  <dimen name="pickerview_topbar_title_textsize">
+    16.0sp
+  </dimen>
+  <dimen name="picture_margin_top">
+    7.11dp
+  </dimen>
+  <dimen name="pldroid_streaming_activity_horizontal_margin">
+    0.0dp
+  </dimen>
+  <dimen name="pldroid_streaming_activity_vertical_margin">
+    0.0dp
+  </dimen>
+  <dimen name="pldroid_streaming_item_padding">
+    10.67dp
+  </dimen>
+  <dimen name="pldroid_streaming_red_circle_padding">
+    7.11dp
+  </dimen>
+  <dimen name="pldroid_streaming_red_square_padding">
+    14.22dp
+  </dimen>
+  <dimen name="pldroid_streaming_ring_size">
+    64.0dp
+  </dimen>
+  <dimen name="pldroid_streaming_ring_width">
+    5.33dp
+  </dimen>
+  <dimen name="pldroid_streaming_square_corner_radius">
+    7.11dp
+  </dimen>
+  <dimen name="pldroid_streaming_streaming_status_padding">
+    44.44dp
+  </dimen>
+  <dimen name="post_content">
+    155.56dp
+  </dimen>
+  <dimen name="post_text_size">
+    13.33sp
+  </dimen>
+  <dimen name="product_info_padding">
+    10.67dp
+  </dimen>
+  <dimen name="rect_round_default">
+    0.89dp
+  </dimen>
+  <dimen name="round_width_default">
+    5.33dp
+  </dimen>
+  <dimen name="s_10">
+    8.89sp
+  </dimen>
+  <dimen name="s_11">
+    9.78sp
+  </dimen>
+  <dimen name="s_12">
+    10.67sp
+  </dimen>
+  <dimen name="s_13">
+    11.56sp
+  </dimen>
+  <dimen name="s_14">
+    12.44sp
+  </dimen>
+  <dimen name="s_15">
+    13.33sp
+  </dimen>
+  <dimen name="s_16">
+    14.22sp
+  </dimen>
+  <dimen name="s_18">
+    16.0sp
+  </dimen>
+  <dimen name="s_20">
+    17.78sp
+  </dimen>
+  <dimen name="s_22">
+    19.56sp
+  </dimen>
+  <dimen name="s_24">
+    21.33sp
+  </dimen>
+  <dimen name="s_25">
+    22.22sp
+  </dimen>
+  <dimen name="search_divider_small">
+    0.89dp
+  </dimen>
+  <dimen name="search_more_img_padding">
+    4.44dp
+  </dimen>
+  <dimen name="shop_flag_icon_right_paddding">
+    1.78dp
+  </dimen>
+  <dimen name="shop_flag_icon_width">
+    26.67dp
+  </dimen>
+  <dimen name="shop_share_maga_bottom_icon_height">
+    53.33dp
+  </dimen>
+  <dimen name="short_comment_left_padding">
+    13.33dp
+  </dimen>
+  <dimen name="short_comment_right_padding">
+    13.33dp
+  </dimen>
+  <dimen name="sidebar_text_size">
+    8.89dp
+  </dimen>
+  <dimen name="size_avatar">
+    35.56dp
+  </dimen>
+  <dimen name="sp_10">
+    8.89sp
+  </dimen>
+  <dimen name="sp_11">
+    9.78sp
+  </dimen>
+  <dimen name="sp_12">
+    10.67sp
+  </dimen>
+  <dimen name="sp_13">
+    11.56sp
+  </dimen>
+  <dimen name="sp_14">
+    12.44sp
+  </dimen>
+  <dimen name="sp_15">
+    13.33sp
+  </dimen>
+  <dimen name="sp_16">
+    14.22sp
+  </dimen>
+  <dimen name="sp_17">
+    15.11sp
+  </dimen>
+  <dimen name="sp_18">
+    16.0sp
+  </dimen>
+  <dimen name="sp_19">
+    16.89sp
+  </dimen>
+  <dimen name="sp_20">
+    17.78sp
+  </dimen>
+  <dimen name="sp_25">
+    22.22sp
+  </dimen>
+  <dimen name="sp_30">
+    26.67sp
+  </dimen>
+  <dimen name="space_15">
+    13.33dp
+  </dimen>
+  <dimen name="space_20">
+    17.78dp
+  </dimen>
+  <dimen name="space_24">
+    21.33dp
+  </dimen>
+  <dimen name="standard_padding">
+    7.11dp
+  </dimen>
+  <dimen name="status_bar_height">
+    22.22dp
+  </dimen>
+  <dimen name="status_bar_height_dentist">
+    14.22dp
+  </dimen>
+  <dimen name="stgv_margin">
+    7.11dp
+  </dimen>
+  <dimen name="title_margin_customview">
+    7.11dp
+  </dimen>
+  <dimen name="title_textsize">
+    17.78sp
+  </dimen>
+  <dimen name="tool_bar_height">
+    39.11dp
+  </dimen>
+  <dimen name="tooltip_corner_radius">
+    1.78dp
+  </dimen>
+  <dimen name="tooltip_horizontal_padding">
+    14.22dp
+  </dimen>
+  <dimen name="tooltip_margin">
+    7.11dp
+  </dimen>
+  <dimen name="tooltip_precise_anchor_extra_offset">
+    7.11dp
+  </dimen>
+  <dimen name="tooltip_precise_anchor_threshold">
+    85.33dp
+  </dimen>
+  <dimen name="tooltip_vertical_padding">
+    5.78dp
+  </dimen>
+  <dimen name="tooltip_y_offset_non_touch">
+    0.0dp
+  </dimen>
+  <dimen name="tooltip_y_offset_touch">
+    14.22dp
+  </dimen>
+  <dimen name="topbar_height">
+    44.44dp
+  </dimen>
+  <dimen name="topbar_n_tag_height">
+    71.11dp
+  </dimen>
+  <dimen name="tuan_square_corner_radius">
+    3.56dp
+  </dimen>
+  <dimen name="ucrop_default_crop_frame_stoke_width">
+    0.89dp
+  </dimen>
+  <dimen name="ucrop_default_crop_grid_stoke_width">
+    0.89dp
+  </dimen>
+  <dimen name="ucrop_default_crop_rect_corner_touch_area_line_length">
+    8.89dp
+  </dimen>
+  <dimen name="ucrop_default_crop_rect_corner_touch_threshold">
+    26.67dp
+  </dimen>
+  <dimen name="ucrop_default_crop_rect_min_size">
+    88.89dp
+  </dimen>
+  <dimen name="ucrop_height_crop_aspect_ratio_text">
+    35.56dp
+  </dimen>
+  <dimen name="ucrop_height_divider_shadow">
+    2.67dp
+  </dimen>
+  <dimen name="ucrop_height_horizontal_wheel_progress_line">
+    17.78dp
+  </dimen>
+  <dimen name="ucrop_height_wrapper_controls">
+    56.89dp
+  </dimen>
+  <dimen name="ucrop_height_wrapper_states">
+    64.0dp
+  </dimen>
+  <dimen name="ucrop_margin_horizontal_wheel_progress_line">
+    8.89dp
+  </dimen>
+  <dimen name="ucrop_margit_top_widget_text">
+    8.89sp
+  </dimen>
+  <dimen name="ucrop_padding_crop_frame">
+    14.22dp
+  </dimen>
+  <dimen name="ucrop_progress_size">
+    26.67dp
+  </dimen>
+  <dimen name="ucrop_size_dot_scale_text_view">
+    7.11dp
+  </dimen>
+  <dimen name="ucrop_size_wrapper_rotate_button">
+    44.44dp
+  </dimen>
+  <dimen name="ucrop_text_size_widget_text">
+    11.56sp
+  </dimen>
+  <dimen name="ucrop_width_horizontal_wheel_progress_line">
+    1.78dp
+  </dimen>
+  <dimen name="verticalspit_view_width">
+    0.53dp
+  </dimen>
+  <dimen name="viewpager_margin">
+    4.44dp
+  </dimen>
+  <dimen name="wheel_picker_padding_bottom">
+    3.56dp
+  </dimen>
+  <dimen name="wheel_picker_padding_left">
+    0.0dp
+  </dimen>
+  <dimen name="wheel_picker_padding_right">
+    0.0dp
+  </dimen>
+  <dimen name="wheel_picker_padding_top">
+    3.56dp
+  </dimen>
+  <dimen name="wheel_picker_total_offset_x">
+    3.56dp
+  </dimen>
+  <dimen name="wheel_title_bar_cancel_size">
+    13.33dp
+  </dimen>
+  <dimen name="wheel_title_bar_ok_size">
+    13.33dp
+  </dimen>
+  <dimen name="wheel_title_bar_title_size">
+    13.33dp
+  </dimen>
+  <item name="yuehui_info_details_sm_20_padding" type="dimen">
+    
+    @dimen/dp_20
+  
+  </item>
+  <item name="yuehui_info_details_sm_padding" type="dimen">
+    
+    @dimen/dp_15
+  
+  </item>
+  <dimen name="zone_item_padding">
+    8.89dp
+  </dimen>
+  <dimen name="zxing_library_status_bar_height">
+    22.22dp
+  </dimen>
+</resources>

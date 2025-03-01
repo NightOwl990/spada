@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/fakeStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_320"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg_new" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_40"
+        android:layout_below="@+id/fakeStatusBar">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:padding="@dimen/length_7"
+            android:src="@drawable/nav_btn_back" />
+
+    </RelativeLayout>
+
+    <!--<include layout="@layout/title_layout" />-->
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_350"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_72"
+        android:layout_marginRight="@dimen/length_10"
+        android:layout_marginBottom="@dimen/length_50"
+        android:background="@drawable/login_corner_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_20"
+            android:layout_marginBottom="@dimen/d_20"
+            android:text="Đăng ký"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_15" />
+
+        <com.lgkk.base_project.widget.flycotablayout.SlidingTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_45"
+            android:background="#ffffff"
+            android:visibility="gone"
+            app:tl_divider_color="@color/white"
+            app:tl_indicator_color="@color/indicator_sliding_tab_layout"
+            app:tl_indicator_height="@dimen/length_3"
+            app:tl_indicator_width_equal_title="true"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/text_sliding_tab_layout"
+            app:tl_textUnselectColor="@color/text_main"
+            app:tl_textsize="@dimen/length_14"
+            app:tl_underline_color="@color/divider_1px"
+            app:tl_underline_height="1dp" />
+        <!--SmsCodeLayout-->
+
+        <com.lgkk.base_project.widget.NonSwipeableWithAnimationViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/other_login_logo"
+        android:layout_marginBottom="@dimen/length_15"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="@dimen/length_20"
+            android:layout_height="1dp"
+            android:background="@color/text_sub" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_10"
+            android:layout_marginRight="@dimen/length_10"
+            android:text="Hoặc đăng nhập bằng"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/length_13" />
+
+        <View
+            android:layout_width="@dimen/length_20"
+            android:layout_height="1dp"
+            android:background="@color/text_sub" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/length_55"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/fb_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30.0dip"
+            android:background="@drawable/login_facebook_color"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btnFacebook"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="@dimen/length_40"
+            android:padding="@dimen/length_2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_facebook_color" />
+
+        <ImageView
+            android:id="@+id/btnGoogle"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="@dimen/length_40"
+            android:layout_marginLeft="@dimen/length_30"
+            android:layout_marginRight="@dimen/length_30"
+            android:padding="@dimen/length_2"
+            android:src="@drawable/google_icon_color2" />
+
+        <ImageView
+            android:id="@+id/btnZalo"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="@dimen/length_40"
+            android:src="@drawable/zalo_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

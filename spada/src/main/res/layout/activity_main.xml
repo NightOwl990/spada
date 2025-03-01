@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.lgkk.base_project.widget.NonSwipeableViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlTabLayout" />
+
+
+    <FrameLayout
+        android:id="@+id/rlTabLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_52"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <com.lgkk.base_project.widget.flycotablayout.CommonTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingTop="@dimen/length_2"
+            android:paddingBottom="@dimen/length_2"
+            app:tl_iconHeight="@dimen/length_32"
+            app:tl_iconWidth="@dimen/length_35"
+            app:tl_iconMargin="0dp"
+            app:tl_indicator_color="#2C97DE"
+            app:tl_indicator_height="0dp"
+            app:tl_textSelectColor="@color/text_bottom_nav_color"
+            app:tl_textUnselectColor="@color/text_btn"
+            app:tl_textsize="@dimen/length_10"
+            app:tl_underline_color="@color/divider_1px"
+            app:tl_underline_gravity="TOP"
+            app:tl_underline_height="1dp" />
+
+        <ImageView
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:id="@+id/btnHomeMore"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/length_1"
+            android:layout_marginBottom="@dimen/length_1"
+            android:layout_height="match_parent"
+             android:adjustViewBounds="true"
+            android:src="@drawable/ic_home_more" />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootRvView"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/length_15">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="@dimen/length_100"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_round_service_transparent"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/length_7"
+        android:paddingBottom="@dimen/length_7"
+        android:text="Message mặt"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/length_12" />
+</RelativeLayout>

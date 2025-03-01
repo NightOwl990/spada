@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootItemView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d_60"
+        android:layout_marginTop="@dimen/d_5"
+        android:orientation="horizontal">
+
+        <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+            android:id="@+id/txtImage"
+            android:src="@drawable/hot_girl_3"
+            android:layout_width="@dimen/d_52"
+            android:layout_height="@dimen/d_52"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/d_4" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/d_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/d_17"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="HanHee"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/d_12" />
+
+            <com.lgkk.base_project.widget.SimpleEvaluateStarView
+                android:id="@+id/rbShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtPrice"
+                android:layout_marginBottom="@dimen/d_2" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtVipPrice"
+                android:text="đ100.000"
+                android:textColor="#ff2f66"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/txtVipPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="đ328.000"
+                android:textColor="@color/color_A97831"
+                android:textSize="@dimen/dp_10" />
+
+            <ImageView
+                android:layout_marginBottom="@dimen/d_2"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/length_10"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/txtVipPrice"
+                android:layout_marginLeft="@dimen/length_2"
+                android:layout_marginTop="0.5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/vip_member_card" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/d_3"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:gravity="center"
+            android:layout_width="@dimen/d_12"
+            android:layout_height="@dimen/d_12"
+            android:layout_marginRight="@dimen/d_2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ease_shop_location" />
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Hà Nội"
+            android:gravity="center"
+            android:textColor="@color/text_fade"
+            android:textSize="@dimen/dp_10" />
+    </LinearLayout>
+
+</LinearLayout>

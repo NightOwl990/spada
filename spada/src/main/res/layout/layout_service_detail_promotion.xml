@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlPromotionPrice"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/length_70"
+    android:layout_marginTop="@dimen/padding_service_promotion"
+    android:layout_marginBottom="@dimen/length_5"
+    android:background="@drawable/red_count_down_bg">
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/depreciate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/spYuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="đ"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/length_15" />
+
+                <TextView
+                    android:id="@+id/txtDiscountPricePromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="10.000.000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/length_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/snap_up_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/length_2"
+            android:background="@drawable/bg_strike_through_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/spYuanbef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="đ"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_11" />
+
+            <TextView
+                android:id="@+id/txtPricePromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/spYuanbef"
+                android:layout_toRightOf="@+id/spYuanbef"
+                android:includeFontPadding="false"
+                android:text="11.500.000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_11" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/length_15"
+        android:layout_weight="2.2">
+
+        <LinearLayout
+            android:id="@+id/snap_up_label_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_15"
+            android:background="@drawable/goods_price_down_green_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/length_7"
+            android:paddingTop="@dimen/length_2"
+            android:paddingRight="@dimen/length_5"
+            android:paddingBottom="@dimen/length_2"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/snap_up_label_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm tới"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_12" />
+
+            <TextView
+                android:id="@+id/tvSpRRPbef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1231"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/depreciate_label_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_10"
+            android:background="@drawable/goods_price_down_red_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/length_12"
+            android:paddingTop="@dimen/length_2"
+            android:paddingRight="@dimen/length_8"
+            android:paddingBottom="@dimen/length_2">
+
+            <TextView
+                android:id="@+id/depreciate_label_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm tới"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_11" />
+
+            <TextView
+                android:id="@+id/txtPriceOffPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="đ1.500.000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_11"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/length_10"
+            android:layout_weight="1.0"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCdTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/length_3"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="Kết thúc sau"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/length_11" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtDayPromotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/length_3"
+                        android:text="7 ngày"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/length_13" />
+
+                    <cn.iwgang.countdownview.CountdownView
+                        android:id="@+id/cdTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:isHideTimeBackground="false"
+                        app:isShowDay="false"
+                        app:isShowHour="true"
+                        app:isShowMillisecond="false"
+                        app:isShowMinute="true"
+                        app:isShowSecond="true"
+                        app:isShowTimeBgDivisionLine="false"
+                        app:suffixGravity="center"
+                        app:suffixTextColor="@color/black"
+                        app:suffixTextSize="@dimen/length_13"
+                        app:timeBgColor="@color/bg_count_down_timer"
+                        app:timeBgRadius="@dimen/length_50"
+                        app:timeBgSize="@dimen/length_20"
+                        app:timeTextColor="@color/white"
+                        app:timeTextSize="@dimen/length_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

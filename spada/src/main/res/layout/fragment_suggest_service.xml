@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <!--collapsing height -->
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <!--Custom Main Layout inside Collapsing-->
+                <include layout="@layout/layout_main_suggest_service_collapse" />
+                <!--End Custom Main Layout inside Collapsing-->
+
+                <!--Toolbar height == Tablayout height -->
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/length_0"
+                    android:layout_marginBottom="@dimen/length_35"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:minHeight="?attr/actionBarSize"
+                    android:tooltipText=""
+                    app:contentInsetEnd="@dimen/length_0"
+                    app:contentInsetLeft="@dimen/length_0"
+                    app:contentInsetRight="@dimen/length_0"
+                    app:contentInsetStart="@dimen/length_0"
+                    app:layout_collapseMode="pin" />
+
+                <!--Custom Tablayout -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/length_35"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.ogaclejapan.smarttablayout.SmartTabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/d_30"
+                        android:layout_marginBottom="@dimen/d_5"
+                        android:background="@color/white"
+                        android:baselineAligned="false"
+                        app:stl_customTabTextLayoutId="@layout/layout_custom_suggest_service_tab"
+                        app:stl_customTabTextViewId="@+id/custom_text"
+                        app:stl_defaultTabTextAllCaps="false"
+                        app:stl_defaultTabTextColor="@color/text_main"
+                        app:stl_defaultTabTextHorizontalPadding="@dimen/length_15"
+                        app:stl_defaultTabTextSize="@dimen/length_13"
+                        app:stl_dividerColor="@color/transparent"
+                        app:stl_dividerThickness="0dp"
+                        app:stl_indicatorColor="#2CC7C5"
+                        app:stl_indicatorInterpolation="linear"
+                        app:stl_indicatorThickness="@dimen/length_3"
+                        app:stl_indicatorWidth="auto"
+                        app:stl_indicatorWithoutPadding="true"
+                        app:stl_underlineThickness="0dp" />
+
+                </LinearLayout>
+
+                <!--End Custom Tablayout -->
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!--Main Bottom Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

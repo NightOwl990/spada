@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="ate_key" format="string" />
+
+    <declare-styleable name="TimelyView">
+        <attr name="timeview_text_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="FastScrollRecyclerView">
+        <attr name="fastScrollThumbColor" format="reference|color" />
+        <attr name="fastScrollTrackColor" format="reference|color" />
+        <attr name="fastScrollPopupBgColor" format="reference|color" />
+        <attr name="fastScrollPopupTextColor" format="reference|color" />
+        <attr name="fastScrollPopupTextSize" format="reference|dimension" />
+        <attr name="fastScrollPopupBackgroundSize" format="reference|dimension" />
+        <attr name="fastScrollAutoHide" format="reference|boolean" />
+        <attr name="fastScrollAutoHideDelay" format="reference|integer" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PlayPause">
+        <attr name="isCircleDraw" format="boolean" />
+        <attr name="circleAlpha" format="integer" />
+        <attr name="backgroundColor" format="reference|color" />
+        <attr name="drawableColor" format="reference|color" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="StepperIndicator" tools:ignore="ResourceName">
+        <attr name="stpi_stepCount" format="integer" />
+        <attr name="stpi_animDuration" format="integer" />
+
+        <attr name="stpi_circleColor" format="color" />
+        <attr name="stpi_circleRadius" format="dimension" />
+        <attr name="stpi_circleStrokeWidth" format="dimension" />
+
+        <attr name="stpi_indicatorColor" format="color" />
+        <attr name="stpi_indicatorRadius" format="dimension" />
+
+        <attr name="stpi_lineColor" format="color" />
+        <attr name="stpi_lineDoneColor" format="color" />
+        <attr name="stpi_lineStrokeWidth" format="dimension" />
+        <attr name="stpi_lineMargin" format="dimension" />
+
+        <attr name="stpi_showDoneIcon" format="boolean" />
+        <attr name="stpi_showStepNumberInstead" format="boolean" />
+        <attr name="stpi_doneIconDrawable" format="reference" />
+
+        <attr name="stpi_useBottomIndicator" format="boolean" />
+        <attr name="stpi_useBottomIndicatorWithStepColors" format="boolean" />
+        <attr name="stpi_bottomIndicatorHeight" format="dimension" />
+        <attr name="stpi_bottomIndicatorWidth" format="dimension" />
+        <attr name="stpi_bottomIndicatorMarginTop" format="dimension" />
+
+        <attr name="stpi_stepsCircleColors" format="reference" />
+        <attr name="stpi_stepsIndicatorColors" format="reference" />
+
+        <attr name="stpi_labels" format="reference" />
+        <attr name="stpi_showLabels" format="boolean" />
+        <attr name="stpi_labelMarginTop" format="dimension" />
+        <attr name="stpi_labelSize" format="dimension" />
+        <attr name="stpi_labelColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <attr name="SpinKitViewStyle" format="reference" />
+
+    <declare-styleable name="SpinKitView">
+        <attr name="SpinKit_Style">
+            <enum name="RotatingPlane" value="0" />
+            <enum name="DoubleBounce" value="1" />
+            <enum name="Wave" value="2" />
+            <enum name="WanderingCubes" value="3" />
+            <enum name="Pulse" value="4" />
+            <enum name="ChasingDots" value="5" />
+            <enum name="ThreeBounce" value="6" />
+            <enum name="Circle" value="7" />
+            <enum name="CubeGrid" value="8" />
+            <enum name="FadingCircle" value="9" />
+            <enum name="FoldingCube" value="10" />
+            <enum name="RotatingCircle" value="11" />
+            <enum name="MultiplePulse" value="12" />
+            <enum name="PulseRing" value="13" />
+            <enum name="MultiplePulseRing" value="14" />
+        </attr>
+        <attr name="SpinKit_Color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TagGroup">
+        <attr name="atg_isAppendMode" format="boolean" />
+        <attr name="atg_inputHint" format="string" />
+
+        <attr name="atg_borderColor" format="color" />
+        <attr name="atg_textColor" format="color" />
+        <attr name="atg_backgroundColor" format="color" />
+
+        <attr name="atg_dashBorderColor" format="color" />
+        <attr name="atg_inputHintColor" format="color" />
+        <attr name="atg_inputTextColor" format="color" />
+
+        <attr name="atg_checkedBorderColor" format="color" />
+        <attr name="atg_checkedTextColor" format="color" />
+        <attr name="atg_checkedMarkerColor" format="color" />
+        <attr name="atg_checkedBackgroundColor" format="color" />
+        <attr name="atg_pressedBackgroundColor" format="color" />
+        <attr name="atg_borderStrokeWidth" format="dimension" />
+        <attr name="atg_textSize" format="dimension" />
+        <attr name="atg_horizontalSpacing" format="dimension" />
+        <attr name="atg_verticalSpacing" format="dimension" />
+        <attr name="atg_horizontalPadding" format="dimension" />
+        <attr name="atg_verticalPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="tagGroupStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="stl_SmartTabLayout">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean" />
+        <attr name="stl_indicatorWithoutPadding" format="boolean" />
+        <attr name="stl_indicatorInFront" format="boolean" />
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+        <attr name="stl_indicatorColor" format="color" />
+        <attr name="stl_indicatorColors" format="reference" />
+        <attr name="stl_indicatorThickness" format="dimension" />
+        <attr name="stl_indicatorWidth" format="dimension">
+            <enum name="auto" value="-1" />
+        </attr>
+        <attr name="stl_indicatorCornerRadius" format="dimension" />
+        <attr name="stl_overlineColor" format="color" />
+        <attr name="stl_overlineThickness" format="dimension" />
+        <attr name="stl_underlineColor" format="color" />
+        <attr name="stl_underlineThickness" format="dimension" />
+        <attr name="stl_dividerColor" format="color" />
+        <attr name="stl_dividerColors" format="reference" />
+        <attr name="stl_dividerThickness" format="dimension" />
+        <attr name="stl_defaultTabBackground" format="reference" />
+        <attr name="stl_defaultTabTextAllCaps" format="boolean" />
+        <attr name="stl_defaultTabTextColor" format="color|reference" />
+        <attr name="stl_defaultTabTextSize" format="dimension" />
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension" />
+        <attr name="stl_defaultTabTextMinWidth" format="dimension" />
+        <attr name="stl_customTabTextLayoutId" format="reference" />
+        <attr name="stl_customTabTextViewId" format="reference" />
+        <attr name="stl_distributeEvenly" format="boolean" />
+        <attr name="stl_clickable" format="boolean" />
+        <attr name="stl_titleOffset" format="dimension">
+            <enum name="auto_center" value="-1" />
+        </attr>
+        <attr name="stl_drawDecorationAfterTab" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalTabLayout">
+        <attr name="indicator_color" format="color" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_corners" format="dimension" />
+        <attr name="indicator_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+            <enum name="fill" value="119" />
+        </attr>
+        <attr name="tab_margin" format="dimension" />
+        <attr name="tab_mode" format="enum">
+            <enum name="fixed" value="10" />
+            <enum name="scrollable" value="11" />
+        </attr>
+        <attr name="tab_height" format="dimension" />
+        <!--        <attr name="tab_padding" format="dimension"/>
+                <attr name="tab_paddingStart" format="dimension"/>
+                <attr name="tab_paddingTop" format="dimension"/>
+                <attr name="tab_paddingEnd" format="dimension"/>
+                <attr name="tab_paddingBottom" format="dimension"/>-->
+    </declare-styleable>
+
+
+    <declare-styleable name="ToggleButtonBase">
+        <attr name="image" format="reference" />
+        <attr name="imageOff" format="reference" />
+        <attr name="imageOn" format="reference" />
+        <attr name="textOff" format="string" />
+        <attr name="textOn" format="string" />
+        <attr name="desc" format="string" />
+        <attr name="bindTo" format="reference" />
+        <attr name="onCheckedChanged" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LayoutToggleButton">
+        <attr name="layout1" format="reference" />
+        <attr name="layout2" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="customTypeFaceTextview" format="string" />
+    </declare-styleable>
+    <declare-styleable name="TextInputEditText">
+        <attr name="customTypeFaceInputText" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomEditText">
+        <attr name="customTypeFaceEdittext" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoscaleEmojiEditText">
+        <attr name="linesLimit" format="float" />
+        <attr name="textScale" format="float" />
+        <attr name="animationDuration" format="integer" />
+    </declare-styleable>
+
+    <!--BannerDetail-->
+    <declare-styleable name="BGABanner">
+        <!--  Chỉ thị điểm vật chứa bối cảnh -->
+        <attr name="banner_pointContainerBackground" format="reference|color" />
+        <!--  Chỉ thị chút bối cảnh -->
+        <attr name="banner_pointDrawable" format="reference" />
+        <!--  Chỉ thị điểm vật chứa tả hữu nội gian cách -->
+        <attr name="banner_pointContainerLeftRightPadding" format="dimension" />
+        <!--  Chỉ thị điểm trên dưới gian ngoài cách -->
+        <attr name="banner_pointTopBottomMargin" format="dimension" />
+        <!--  Chỉ thị điểm tả hữu gian ngoài cách -->
+        <attr name="banner_pointLeftRightMargin" format="dimension" />
+        <!--  Chỉ thị khí vị trí -->
+        <attr name="banner_indicatorGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+        <!--  Phải chăng mở ra tự động vòng truyền bá -->
+        <attr name="banner_pointAutoPlayAble" format="boolean" />
+        <!--  Tự động vòng truyền bá thời gian khoảng cách -->
+        <attr name="banner_pointAutoPlayInterval" format="integer" />
+        <!--  Số trang hoán đổi quá trình thời gian dài độ -->
+        <attr name="banner_pageChangeDuration" format="integer" />
+        <!--  Giao diện hoán đổi anime hiệu quả -->
+        <attr name="banner_transitionEffect" format="enum">
+            <enum name="defaultEffect" value="0" />
+            <enum name="alpha" value="1" />
+            <enum name="rotate" value="2" />
+            <enum name="cube" value="3" />
+            <enum name="flip" value="4" />
+            <enum name="accordion" value="5" />
+            <enum name="zoomFade" value="6" />
+            <enum name="fade" value="7" />
+            <enum name="zoomCenter" value="8" />
+            <enum name="zoomStack" value="9" />
+            <enum name="stack" value="10" />
+            <enum name="depth" value="11" />
+            <enum name="zoom" value="12" />
+        </attr>
+        <!--  Nhắc nhở văn án văn tự nhan sắc -->
+        <attr name="banner_tipTextColor" format="reference|color" />
+        <!--  Nhắc nhở văn án văn tự lớn nhỏ -->
+        <attr name="banner_tipTextSize" format="dimension" />
+        <!--  Tăng thêm mạng lưới số liệu lúc bao trùm tại  BGABanner  Tầng cao nhất giành chỗ đồ -->
+        <attr name="banner_placeholderDrawable" format="reference" />
+        <!--  Có phải là hay không số lượng chỉ thị khí -->
+        <attr name="banner_isNumberIndicator" format="boolean" />
+        <!--  Số lượng chỉ thị khí văn tự nhan sắc -->
+        <attr name="banner_numberIndicatorTextColor" format="reference|color" />
+        <!--  Số lượng chỉ thị khí văn tự lớn nhỏ -->
+        <attr name="banner_numberIndicatorTextSize" format="dimension" />
+        <!--  Số lượng chỉ thị khí bối cảnh -->
+        <attr name="banner_numberIndicatorBackground" format="reference" />
+        <!--  Đương chỉ có một tờ số liệu lúc phải chăng biểu hiện chỉ thị khí, ngầm thừa nhận trị giá là  false -->
+        <attr name="banner_isNeedShowIndicatorOnOnlyOnePage" format="boolean" />
+        <!--  Tự động vòng truyền bá khu vực khoảng cách  BGABanner  Dưới đáy khoảng cách, dùng cho làm chỉ thị khí khu vực cùng tự động vòng truyền bá khu vực không trùng điệp -->
+        <attr name="banner_contentBottomMargin" format="dimension" />
+        <!--  Rộng cao tỉ lệ, nếu như lớn hơn  0, thì sẽ căn cứ độ rộng đến tính toán độ cao, nếu không sử dụng  android:layout_height  Chỉ định độ cao -->
+        <attr name="banner_aspectRatio" format="float" />
+        <!--  Giành chỗ đồ cùng tài nguyên hình ảnh co lại thả hình thức -->
+
+    </declare-styleable>
+
+    <declare-styleable name="ProgressCircle">
+        <attr name="persent" format="integer" />
+        <attr name="color_hint_progress" format="color" />
+        <attr name="color_progress" format="color" />
+        <attr name="color_bg" format="color" />
+        <attr name="color_text_persent" format="color" />
+        <attr name="strock_hint_progress" format="dimension" />
+        <attr name="strock_progress" format="dimension" />
+        <attr name="text_size_persent" format="dimension" />
+        <attr name="text_size_tail" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ImageButtonTag">
+        <attr name="text" format="string" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color" format="color" />
+        <attr name="type_face_name" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SwipeFlingAdapterView">
+        <attr name="y_offset_step" format="dimension" />
+        <attr name="rotation_degrees" format="float" />
+        <attr name="min_adapter_stack" format="integer" />
+        <attr name="max_visible" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TriangleView">
+        <attr name="orientation" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="colorBg" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewSquare">
+        <attr name="is_square_height" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RoundRectImageView">
+        <attr name="round_rect_border_width" format="dimension" />
+        <attr name="round_rect_border_color" format="color" />
+        <attr name="round_rect_overlay" format="boolean" />
+        <attr name="round_rect_fill_color" format="color" />
+        <attr name="round_rect_radius_x" format="dimension" />
+        <attr name="round_rect_radius_y" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ProgressCircleCustom">
+        <attr name="background_color" format="color" />
+        <attr name="foreground_color" format="color" />
+        <attr name="foreground_size" format="dimension" />
+        <attr name="progress_color" format="color" />
+        <attr name="progress_size" format="dimension" />
+        <attr name="progress_value" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CustomeTextViewFraction">
+        <attr name="color_first" format="color" />
+        <attr name="color_sendcond" format="color" />
+        <attr name="color_source" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CardViewCustom">
+        <attr name="triangle_size" format="dimension" />
+        <attr name="triangle_angle" format="float" />
+    </declare-styleable>
+    <!--//tag-->
+    <declare-styleable name="LabelsView">
+        <attr name="max_labels" format="integer" />
+        <attr name="show_cross" format="boolean" />
+        <attr name="icon_cross" format="reference" />
+        <attr name="label_background_res" format="reference" />
+        <attr name="label_clickable" format="boolean" />
+        <attr name="label_padding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="WeekView">
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+        <attr name="hourHeight" format="dimension" />
+        <attr name="minHourHeight" format="dimension" />
+        <attr name="maxHourHeight" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="eventTextSize" format="dimension" />
+        <attr name="headerColumnPadding" format="dimension" />
+        <attr name="headerRowPadding" format="dimension" />
+        <attr name="columnGap" format="dimension" />
+        <attr name="headerColumnTextColor" format="color" />
+        <attr name="noOfVisibleDays" format="integer" />
+        <attr name="showFirstDayOfWeekFirst" format="boolean" />
+        <attr name="headerRowBackgroundColor" format="color" />
+        <attr name="dayBackgroundColor" format="color" />
+        <attr name="hourSeparatorColor" format="color" />
+        <attr name="todayBackgroundColor" format="color" />
+        <attr name="todayHeaderTextColor" format="color" />
+        <attr name="hourSeparatorHeight" format="dimension" />
+        <attr name="eventTextColor" format="color" />
+        <attr name="eventPadding" format="dimension" />
+        <attr name="headerColumnBackground" format="color" />
+        <attr name="dayNameLength" format="enum">
+            <enum name="length_short" value="1" />
+            <enum name="length_long" value="2" />
+        </attr>
+        <attr name="overlappingEventGap" format="dimension" />
+        <attr name="eventMarginVertical" format="dimension" />
+        <attr name="xScrollingSpeed" format="float" />
+        <attr name="eventCornerRadius" format="dimension" />
+        <attr name="showDistinctPastFutureColor" format="boolean" />
+        <attr name="showDistinctWeekendColor" format="boolean" />
+        <attr name="futureBackgroundColor" format="color" />
+        <attr name="pastBackgroundColor" format="color" />
+        <attr name="futureWeekendBackgroundColor" format="color" />
+        <attr name="pastWeekendBackgroundColor" format="color" />
+        <attr name="showNowLine" format="boolean" />
+        <attr name="nowLineColor" format="color" />
+        <attr name="nowLineThickness" format="dimension" />
+        <attr name="horizontalFlingEnabled" format="boolean" />
+        <attr name="verticalFlingEnabled" format="boolean" />
+        <attr name="allDayEventHeight" format="dimension" />
+        <attr name="scrollDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="Banner">
+        <attr name="delay_time" format="integer"/>
+        <attr name="scroll_time" format="integer"/>
+        <attr name="is_auto_play" format="boolean"/>
+        <attr name="title_background" format="color|reference"/>
+        <attr name="title_textcolor" format="color"/>
+        <attr name="title_textsize" format="dimension"/>
+        <attr name="title_height" format="dimension"/>
+        <attr name="indicator_width_banner" format="dimension"/>
+        <attr name="indicator_height" format="dimension"/>
+        <attr name="indicator_selected_width" format="dimension"/>
+        <attr name="indicator_selected_height" format="dimension"/>
+        <attr name="indicator_margin" format="dimension"/>
+        <attr name="indicator_drawable_selected" format="reference"/>
+        <attr name="indicator_drawable_unselected" format="reference"/>
+        <attr name="banner_layout" format="reference"/>
+        <attr name="banner_default_image" format="reference"/>
+        <attr name="image_scale_type" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="center_crop" value="1"/>
+            <enum name="center_inside" value="2"/>
+            <enum name="fit_center" value="3"/>
+            <enum name="fit_end" value="4"/>
+            <enum name="fit_start" value="5"/>
+            <enum name="fit_xy" value="6"/>
+            <enum name="matrix" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"/>
+        <attr name="max_select" format="integer"/>
+        <attr name="gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

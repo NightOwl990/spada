@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgTop"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/d_160"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_city" />
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <!--collapsing height -->
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                    <!--Custom Main Layout inside Collapsing-->
+                    <include layout="@layout/layout_shop_v2_header" />
+                    <!--End Custom Main Layout inside Collapsing-->
+
+                    <!--Toolbar height == Tablayout height -->
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/length_35"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:tooltipText=""
+                        app:contentInsetEnd="@dimen/length_0"
+                        app:contentInsetLeft="@dimen/length_0"
+                        app:contentInsetRight="@dimen/length_0"
+                        app:contentInsetStart="@dimen/length_0"
+                        app:layout_collapseMode="pin">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <View
+                                android:id="@+id/placeholderToolbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/transparent" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/length_45"
+                                android:background="@color/transparent" />
+                        </LinearLayout>
+
+                    </androidx.appcompat.widget.Toolbar>
+                    <!--Custom Tablayout -->
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d_35"
+                        android:background="@color/white"
+                        android:layout_gravity="bottom"
+                        android:visibility="visible">
+
+                        <com.lgkk.base_project.widget.magicindicator.MagicIndicator
+                            android:id="@+id/magicTabLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/d_30"
+                            android:layout_marginBottom="@dimen/d_5"
+                            />
+                    </LinearLayout>
+
+
+                    <!--End Custom Tablayout -->
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!--Main Bottom Layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <com.lgkk.spada.screen.home.widget.FadeShopToolbar
+        android:id="@+id/fadeShopToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fst_ParallaxEndFadeHeight="250"
+        app:fst_ParallaxMiddleFadeHeight="100"
+        app:fst_ParallaxStartFadeHeight="1"
+        app:fst_drawableLeft="@drawable/ease_gray_location"
+        app:fst_drawableLeftChange="@drawable/ease_gray_location"
+        app:fst_drawableMiddle="@drawable/search_icon_white"
+        app:fst_drawableMiddleChange="@drawable/search_icon"
+        app:fst_drawableRight="@drawable/shopping_cart_icon_white"
+        app:fst_drawableRightChange="@drawable/top_cart_b_small"
+        app:fst_drawableSubRight="@drawable/ease_envelopes"
+        app:fst_text="Tìm kiếm"
+        app:fst_textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <!--collapsing height -->
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <!--Custom Main Layout inside Collapsing-->
+                    <LinearLayout
+                        android:id="@+id/rootView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginBottom="@dimen/length_35"
+                        android:orientation="vertical">
+
+                        <!--Banner-->
+                        <com.lgkk.base_project.banner.Banner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/length_140"
+                            android:background="@drawable/bg_round_banner_5px"
+                            app:delay_time="5000"
+                            app:image_scale_type="center_crop"
+                            app:indicator_height="@dimen/length_3"
+                            app:indicator_width_banner="@dimen/length_3" />
+
+                        <!-- Recycler View Service -->
+                        <include layout="@layout/layout_service_category_top" />
+
+                        <!--Three Service-->
+                        <include layout="@layout/layout_service_list_three" />
+
+                        <!--Most View-->
+                        <include layout="@layout/layout_service_category_most_view" />
+
+                        <!--Doctor-->
+                        <include layout="@layout/layout_service_category_doctor" />
+
+                    </LinearLayout>
+                    <!--End Custom Main Layout inside Collapsing-->
+
+                    <!--Toolbar height == Tablayout height -->
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/length_35"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:tooltipText=""
+                        app:contentInsetEnd="@dimen/length_0"
+                        app:contentInsetLeft="@dimen/length_0"
+                        app:contentInsetRight="@dimen/length_0"
+                        app:contentInsetStart="@dimen/length_0"
+                        app:layout_collapseMode="pin">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <View
+                                android:id="@+id/placeholderToolbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/transparent" />
+
+                            <View
+
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/length_40"
+                                android:background="@color/transparent" />
+                        </LinearLayout>
+
+                    </androidx.appcompat.widget.Toolbar>
+                    <!--Custom Tablayout -->
+
+
+                    <com.ogaclejapan.smarttablayout.SmartTabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/length_30"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/length_5"
+                        android:background="@color/white"
+                        android:baselineAligned="false"
+                        app:stl_customTabTextLayoutId="@layout/layout_custom_suggest_service_tab"
+                        app:stl_customTabTextViewId="@+id/custom_text"
+                        app:stl_defaultTabTextAllCaps="false"
+                        app:stl_defaultTabTextColor="@color/text_dark"
+                        app:stl_defaultTabTextSize="@dimen/length_14"
+                        app:stl_dividerColor="@color/transparent"
+                        app:stl_dividerThickness="0dp"
+                        app:stl_indicatorColor="#2CC7C5"
+                        app:stl_indicatorInterpolation="linear"
+                        app:stl_indicatorThickness="0dp"
+                        app:stl_indicatorWidth="auto"
+                        app:stl_distributeEvenly="true"
+                        app:stl_indicatorWithoutPadding="true"
+                        app:stl_underlineThickness="0dp" />
+                    <!--End Custom Tablayout -->
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!--Main Bottom Layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <com.lgkk.base_project.widget.NonSwipeableViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <com.lgkk.spada.widget.FadeSearchToolbar
+        android:id="@+id/searchToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:fs_ParallaxEndFadeHeight="350"
+        app:fs_ParallaxStartFadeHeight="100"
+        app:fs_alpha="0"
+        app:fs_drawableRight="@drawable/shopping_cart_icon_white"
+        app:fs_drawableRightChange="@drawable/top_cart_b_small"
+        app:fs_text="Tìm kiếm"
+        app:fs_textColor="@color/text_sub" />
+
+</RelativeLayout>

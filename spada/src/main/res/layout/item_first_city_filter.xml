@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lgkk.spada.screen.service.widget.filter.FilterCheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_filter_left"
+    android:enabled="true"
+    android:gravity="center"
+    android:paddingBottom="@dimen/length_12"
+    android:textSize="@dimen/length_13"
+    android:paddingTop="@dimen/length_12"
+    android:textColor="@drawable/filter_selector_tv_style"
+    tools:text="Text"/>

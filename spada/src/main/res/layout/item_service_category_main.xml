@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlService"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/length_5">
+
+    <ImageView
+        android:id="@+id/imgService"
+        android:layout_width="@dimen/length_35"
+        android:layout_height="@dimen/length_35"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/length_2"
+        android:src="@drawable/icon_cat_service_1" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgService"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/length_7"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Chăm sóc"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/length_12" />
+
+</RelativeLayout>

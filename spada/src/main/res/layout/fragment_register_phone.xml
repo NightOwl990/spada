@@ -1,0 +1,124 @@
+<LinearLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_45"
+        android:layout_marginLeft="@dimen/length_30"
+        android:layout_marginRight="@dimen/length_30"
+        android:background="@drawable/transparent_white_btn"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtCountryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/length_45"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="@dimen/length_10"
+            android:paddingRight="@dimen/length_5"
+            android:singleLine="true"
+            android:text="+84"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_14"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:src="@drawable/white_down_arrow"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/length_45"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:hint="Số điện thoại"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/length_10"
+            android:paddingRight="@dimen/length_10"
+            android:singleLine="true"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_fade"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:textSize="@dimen/length_14" />
+
+        <Button
+            android:id="@+id/btnGetSmsCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/transparent_white_line_btn"
+            android:gravity="center"
+            android:paddingLeft="@dimen/length_5"
+            android:paddingRight="@dimen/length_10"
+            android:singleLine="true"
+            android:text="Lấy mã xác nhận"
+            android:textColor="#FF6D13"
+            android:textSize="@dimen/length_11"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edtVerifyCode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_45"
+        android:layout_below="@+id/phone_ll"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/length_30"
+        android:layout_marginTop="@dimen/length_20"
+        android:layout_marginRight="@dimen/length_30"
+        android:background="@drawable/transparent_white_btn"
+        android:hint="Nhập mã xác nhận"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="@dimen/length_10"
+        android:paddingRight="@dimen/length_10"
+        android:singleLine="true"
+        android:textColor="@color/text_main"
+        android:textColorHint="@color/text_fade"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:textSize="@dimen/length_14" />
+
+    <TextView
+        android:layout_marginTop="@dimen/length_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/length_30"
+        android:layout_marginRight="@dimen/length_30"
+        android:text="Bằng việc đăng ký bạn đồng ý với các Điều Khoản và Điều Kiện của chúng tôi."
+        android:textColor="@color/text_sub"
+        android:textSize="@dimen/length_12" />
+
+
+    <TextView
+        android:id="@+id/btnRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_65"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/length_20"
+        android:layout_marginTop="@dimen/length_15"
+        android:layout_marginRight="@dimen/length_20"
+        android:layout_marginBottom="@dimen/length_20"
+        android:background="@drawable/btn_confirm_bg_750"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textColor="@color/white"
+        android:textSize="@dimen/length_14" />
+</LinearLayout>

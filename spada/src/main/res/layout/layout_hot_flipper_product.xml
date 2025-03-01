@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rlHotFlipperProduct"
+    android:layout_height="@dimen/length_125"
+    android:background="@color/white"
+    android:visibility="visible">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_1px" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/divider_1px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_1px" />
+
+    <LinearLayout
+        android:id="@+id/lnHotSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/length_13"
+        android:layout_marginTop="@dimen/length_13"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgHotSaleTitle"
+            android:layout_width="@dimen/length_16"
+            android:layout_height="@dimen/length_16"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ease_guarantee" />
+
+        <TextView
+            android:id="@+id/txtHotSaleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_4"
+            android:layout_marginRight="@dimen/length_5"
+            android:text="Sản phẩm bán chạy"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_14" />
+    </LinearLayout>
+
+
+    <com.lgkk.base_project.widget.viewflipper.VerticalScrollLayout
+        android:layout_marginLeft="@dimen/d_13"
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnHotSale"
+        app:vsl_animDuration="1000"
+        app:vsl_isCusDuration="true"
+        app:vsl_sleepTime="3000" />
+
+
+</RelativeLayout>
+

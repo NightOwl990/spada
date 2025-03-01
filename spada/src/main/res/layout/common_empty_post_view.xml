@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/length_50">
+
+        <ImageView
+            android:id="@+id/page_tip_img"
+            android:layout_width="@dimen/length_80"
+            android:layout_height="@dimen/length_80"
+            android:background="@drawable/weibosdk_empty_failed" />
+
+        <TextView
+            android:id="@+id/page_tip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/length_15"
+            android:text="Không tìm thấy bài viết"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/length_5"
+            android:text="(Bài viết có thể vừa bị xóa)"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_15" />
+
+
+        <TextView
+            android:id="@+id/btnGoBack"
+            android:layout_width="@dimen/length_144"
+            android:layout_height="@dimen/length_34"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/length_10"
+            android:background="@drawable/tip_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Quay lại"
+            android:textAllCaps="false"
+            android:textColor="#ffff4978"
+            android:textSize="@dimen/length_15" />
+    </LinearLayout>
+</RelativeLayout>

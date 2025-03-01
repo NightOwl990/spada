@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/fakeStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_320"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg_new" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_40"
+        android:layout_below="@+id/fakeStatusBar">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/btnBack"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/length_5"-->
+        <!--android:padding="@dimen/length_7"-->
+        <!--android:src="@drawable/nav_btn_back" />-->
+
+    </RelativeLayout>
+
+    <!--<include layout="@layout/title_layout" />-->
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_350"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_72"
+        android:layout_marginRight="@dimen/length_10"
+        android:layout_marginBottom="@dimen/length_100"
+        android:background="@drawable/login_corner_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_20"
+            android:layout_marginBottom="@dimen/d_20"
+            android:text="Đăng nhập"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_15" />
+
+
+        <!--SmsCodeLayout-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/phone_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/length_45"
+                android:layout_marginLeft="@dimen/length_30"
+                android:layout_marginRight="@dimen/length_30"
+                android:background="@drawable/transparent_white_btn"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/length_45"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/length_10"
+                    android:paddingRight="@dimen/length_5"
+                    android:singleLine="true"
+                    android:text="+84"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/length_14"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/down_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:src="@drawable/white_down_arrow"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edtPhoneNumber"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/length_45"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="@color/transparent"
+                    android:hint="Số điện thoại"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="@dimen/length_10"
+                    android:paddingRight="@dimen/length_10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_main"
+                    android:textColorHint="@color/text_fade"
+                    android:textCursorDrawable="@drawable/edit_cursor_color"
+                    android:textSize="@dimen/length_14" />
+
+                <Button
+                    android:id="@+id/btnGetSmsCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/transparent_white_line_btn"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/length_5"
+                    android:paddingRight="@dimen/length_10"
+                    android:singleLine="true"
+                    android:text="Lấy mã xác nhận"
+                    android:textColor="#FF6D13"
+                    android:textSize="@dimen/length_11"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/length_45"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/length_30"
+                android:layout_marginTop="@dimen/length_20"
+                android:layout_marginRight="@dimen/length_30"
+                android:background="@drawable/transparent_white_btn"
+                android:hint="Mật khẩu"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingLeft="@dimen/length_10"
+                android:paddingRight="@dimen/length_10"
+                android:singleLine="true"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_fade"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:textSize="@dimen/length_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/length_40"
+                android:layout_marginTop="@dimen/length_10"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chưa có tài khoản?"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/length_12" />
+
+                <TextView
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/length_10"
+                    android:text="Đăng ký ngay"
+                    android:textColor="@color/drop_down_selected"
+                    android:textSize="@dimen/length_13" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/length_65"
+                android:layout_marginLeft="@dimen/length_20"
+                android:layout_marginTop="@dimen/length_15"
+                android:layout_marginRight="@dimen/length_20"
+                android:background="@drawable/btn_confirm_bg_750"
+                android:gravity="center"
+                android:text="Đăng nhập"
+                android:textColor="@color/white"
+                android:textSize="@dimen/length_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/other_login_logo"
+        android:layout_marginBottom="@dimen/length_15"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="@dimen/length_20"
+            android:layout_height="1dp"
+            android:background="@color/text_sub" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_10"
+            android:layout_marginRight="@dimen/length_10"
+            android:text="Hoặc đăng nhập bằng"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/length_13" />
+
+        <View
+            android:layout_width="@dimen/length_20"
+            android:layout_height="1dp"
+            android:background="@color/text_sub" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/length_55"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/btnFacebook"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="@dimen/length_40"
+            android:padding="@dimen/length_2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_facebook_color" />
+
+        <ImageView
+            android:id="@+id/btnGoogle"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="@dimen/length_40"
+            android:layout_marginLeft="@dimen/length_30"
+            android:layout_marginRight="@dimen/length_30"
+            android:padding="@dimen/length_2"
+            android:src="@drawable/google_icon_color2" />
+
+        <ImageView
+            android:id="@+id/btnZalo"
+            android:layout_width="@dimen/length_40"
+            android:layout_height="@dimen/length_40"
+            android:src="@drawable/zalo_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

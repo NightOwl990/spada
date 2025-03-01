@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnReply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_press_item"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/length_15">
+
+        <ImageView
+            android:layout_width="@dimen/length_18"
+            android:layout_height="@dimen/length_18"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/diary_btn_write" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_8"
+            android:text="Lưu trữ bài viết"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_14" />
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_press_item"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/length_15"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/length_18"
+            android:layout_height="@dimen/length_18"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/me_icon_remind" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_8"
+            android:text="Bật thông báo"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_14" />
+        />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_1px" />
+
+    <LinearLayout
+        android:id="@+id/lnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_press_item"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/length_15">
+
+        <ImageView
+            android:layout_width="@dimen/length_18"
+            android:layout_height="@dimen/length_18"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cash_back_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_8"
+            android:text="Xóa bài viết"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_14" />
+        />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_1px" />
+
+    <LinearLayout
+        android:id="@+id/lnReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_press_item"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/length_15">
+
+        <ImageView
+            android:layout_width="@dimen/length_18"
+            android:layout_height="@dimen/length_18"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/intumescent_hint_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_8"
+            android:text="Báo cáo bài viết vi phạm"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_14" />
+        />
+    </LinearLayout>
+
+</LinearLayout>

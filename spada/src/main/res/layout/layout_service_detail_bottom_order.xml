@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/length_50"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_1px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btnBuyNow"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llPrice"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/length_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ưu đãi:"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/length_13" />
+
+                <TextView
+                    android:id="@+id/tvPrice_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/length_4"
+                    android:text="1.000.000đ"
+                    android:textColor="#ffff527f"
+                    android:textSize="@dimen/length_13"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/length_13"
+                    android:layout_height="@dimen/length_13"
+                    android:layout_marginLeft="@dimen/length_3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/product_info_price_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPriceToHos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llPriceToPay"
+                android:layout_marginTop="@dimen/length_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng:"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/length_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/length_4"
+                    android:text="12.000.000đ"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/length_13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln"
+            android:layout_width="@dimen/length_55"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/length_20"
+                android:layout_height="@dimen/length_20"
+                android:scaleType="centerCrop"
+                android:src="@drawable/order_chat_new_large" />
+
+            <TextView
+                android:id="@+id/btnChatShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/length_2"
+                android:gravity="center"
+                android:text="Chat"
+                android:textColor="@color/text_service_blue"
+                android:textSize="@dimen/length_13" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnBuyNow"
+        android:layout_width="@dimen/length_80"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/btnAddToCart"
+        android:background="@drawable/bg_buy_add_cart"
+        android:gravity="center"
+        android:text="Mua ngay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/length_14" />
+
+    <TextView
+        android:id="@+id/btnAddToCart"
+        android:layout_width="@dimen/length_80"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_buy_now"
+        android:gravity="center"
+        android:text="Thêm vào giỏ hàng"
+        android:textColor="@color/white"
+        android:textSize="@dimen/length_14" />
+
+    <LinearLayout
+        android:id="@+id/tuan_buy_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/no_pintuan_buy"
+            android:layout_width="@dimen/length_80"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/pintuan_buy"
+            android:background="#ffffa2b4"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/length_14" />
+
+        <TextView
+            android:id="@+id/pintuan_buy"
+            android:layout_width="@dimen/length_80"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_buy_mission"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/length_14" />
+    </LinearLayout>
+</RelativeLayout>

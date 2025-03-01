@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    android:layout_marginBottom="@dimen/length_35"
+    android:background="@color/bg_home_service_toolbar_color"
+    android:orientation="vertical">
+    <!-- Recycler View Service -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_10"
+        android:background="@drawable/bg_round_border_white_fill_5px"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCatService"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/length_5" />
+
+    </LinearLayout>
+    <!--Banner-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/length_10"
+        android:background="@drawable/bg_round_banner_5px"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.lgkk.base_project.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_100"
+            app:delay_time="3000"
+            app:indicator_drawable_selected="@drawable/home_banner_sel_indicator"
+            app:indicator_drawable_unselected="@drawable/home_banner_def_indicator"
+            app:indicator_height="@dimen/d_2"
+            app:indicator_margin="@dimen/d_2"
+            app:indicator_width_banner="@dimen/d_10"
+            app:image_scale_type="center_crop"/>
+    </LinearLayout>
+
+
+    <!--Three Service-->
+
+
+    <include layout="@layout/layout_suggest_service_list_three" />
+
+    <LinearLayout
+        android:id="@+id/lnBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/rvUtiService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_marginTop="@dimen/length_5"
+            android:layout_marginRight="@dimen/length_5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_7"
+            android:background="@drawable/bg_gradient_indicator_line" />
+
+    </LinearLayout>
+</LinearLayout>

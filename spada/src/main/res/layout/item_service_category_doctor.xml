@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlDoctor"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/length_200"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/d_15"
+        android:paddingRight="@dimen/d_15"
+        android:id="@+id/rlMain"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgAvatar"
+        android:layout_marginLeft="@dimen/length_5"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="@dimen/length_5"
+        android:layout_marginBottom="@dimen/length_15"
+        android:background="@drawable/bg_round_color_service_all">
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtOrderNumber"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="@dimen/length_94"
+            android:maxLines="2"
+            android:text="Trưởng khoa thẩm mỹ Kangnam, phó trưởng ban viện Y học cổ truyền Việt Nam"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_12" />
+
+        <TextView
+            android:id="@+id/txtOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/length_15"
+            android:text="12371 lượt xem"
+            android:textColor="@color/text_service_blue"
+            android:textSize="@dimen/length_12" />
+    </RelativeLayout>
+
+    <com.lgkk.base_project.widget.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/length_70"
+        android:layout_height="@dimen/length_70"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/thac_si_le_thien_hieu"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/length_10"
+        android:gravity="center"
+        android:maxWidth="@dimen/length_94"
+        android:text="Ts. Lê Thiên Hiếu"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/length_13"
+        android:textStyle="bold" />
+
+</RelativeLayout>

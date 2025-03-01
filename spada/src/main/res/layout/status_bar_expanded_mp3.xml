@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationbg"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/length_128"
+    android:background="@color/blur">
+
+    <ImageView
+        android:id="@+id/status_bar_album_art"
+        android:layout_width="@dimen/notification_expanded_height"
+        android:layout_height="@dimen/notification_expanded_height"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_action_play_arrow" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/status_bar_album_art"
+        android:divider="?android:listDivider"
+        android:dividerPadding="12.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <ImageButton
+            android:id="@+id/status_bar_prev"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/play_controls_notification"
+            android:layout_weight="1.0"
+            android:background="?android:selectableItemBackground"
+            android:padding="10.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_skip_previous" />
+
+        <ImageButton
+            android:id="@+id/status_bar_play"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/play_controls_notification"
+            android:layout_weight="1.0"
+            android:background="?android:selectableItemBackground"
+            android:padding="10.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_play_arrow" />
+
+        <ImageButton
+            android:id="@+id/status_bar_next"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/play_controls_notification"
+            android:layout_weight="1.0"
+            android:background="?android:selectableItemBackground"
+            android:padding="10.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_skip_next" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_above="@+id/buttons"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/status_bar_album_art"
+        android:background="@color/gray_200" />
+
+    <ImageButton
+        android:id="@+id/status_bar_collapse"
+        android:layout_width="@dimen/length_30"
+        android:layout_height="@dimen/length_30"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/length_8"
+        android:layout_marginRight="@dimen/length_8"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ic_clear_white_48dp" />
+
+    <LinearLayout
+        android:id="@+id/textarea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/status_bar_album_art"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/notification_padding"
+        android:paddingTop="8.0dip">
+
+        <TextView
+            android:id="@+id/status_bar_track_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/length_10"
+            android:layout_marginRight="@dimen/length_50"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:focusable="true"
+            android:lines="2"
+            android:singleLine="true"
+            android:text="Bài hát Abc sssss"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/status_bar_artist_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/length_10"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:maxLines="1"
+            android:text="Ca sĩ abc àkff"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

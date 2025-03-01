@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRootView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/length_80"
+    android:background="@color/white">
+
+
+    <com.lgkk.base_project.widget.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/length_55"
+        android:layout_height="@dimen/length_55"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/length_13"
+        android:layout_marginRight="@dimen/length_13"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar_default" />
+
+    <LinearLayout
+        android:id="@+id/lnText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/length_33"
+        android:layout_toRightOf="@+id/imgAvatar"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC đã thích bài viết của bạn"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_13" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17 giờ trước"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/length_12" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnSetting"
+        android:layout_width="@dimen/length_40"
+        android:layout_height="@dimen/length_50"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/length_8"
+        android:paddingRight="@dimen/length_3"
+        android:scaleType="centerInside"
+        android:src="@drawable/com_taobao_tae_sdk_web_view_title_bar_more" />
+
+</RelativeLayout>

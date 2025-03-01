@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/short_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.lgkk.base_project.widget.flowlayout.AutoFlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lnGetMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/length_5"
+        android:paddingBottom="@dimen/length_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgGetMore"
+            android:layout_width="@dimen/length_15"
+            android:layout_height="@dimen/length_15"
+            android:layout_gravity="center"
+            android:padding="@dimen/length_1"
+            android:src="@drawable/down_arrow_project" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_1px" />
+</LinearLayout>

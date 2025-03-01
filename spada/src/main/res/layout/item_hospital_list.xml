@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/d_15">
+
+
+    <com.lgkk.base_project.widget.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/d_50"
+        android:layout_height="@dimen/d_50"
+        android:layout_marginLeft="@dimen/d_15"
+        android:layout_marginRight="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_spa" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1.0dip"
+        android:layout_toRightOf="@+id/imgAvatar"
+
+        android:drawablePadding="@dimen/dp_10"
+        android:text="TMV Kangnam - Y khoa làm đẹp"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/d_15" />
+
+    <include
+        android:id="@+id/ll_award"
+        layout="@layout/layout_awards"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d_20"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/d_8"
+        android:layout_toRightOf="@+id/imgAvatar"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_award"
+        android:layout_marginTop="@dimen/d_3"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_toRightOf="@+id/imgAvatar"
+        android:drawablePadding="@dimen/d_5"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Khoa y học và thẩm mỹ"
+        android:textColor="@color/normal_color_7"
+        android:textSize="@dimen/d_12" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_award"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/d_3"
+        android:layout_marginRight="@dimen/d_15"
+        android:gravity="right"
+        android:text="Hà Nội"
+        android:textColor="@color/normal_color_7"
+        android:textSize="@dimen/d_12" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtType"
+        android:layout_toRightOf="@+id/imgAvatar"
+        android:drawablePadding="@dimen/d_5"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Số 25 ngõ 37 Đại Đồng"
+        android:textColor="@color/normal_color_7"
+        android:textSize="@dimen/d_12" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_9"
+        android:layout_below="@id/txtAddress"
+        android:layout_toRightOf="@id/imgAvatar"
+        android:orientation="horizontal"
+
+        android:id="@+id/lnAnalytics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <com.lgkk.base_project.widget.SimpleEvaluateStarView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtAddress"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@+id/imgAvatar" />
+
+        <TextView
+            android:id="@+id/txtReservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAddress"
+            android:layout_toRightOf="@+id/ratingbar"
+            android:text="189789 lượt đặt"
+            android:textColor="@color/normal_color_7"
+            android:textSize="@dimen/d_12" />
+
+        <TextView
+            android:id="@+id/line_anli"
+            android:layout_width="1.0dip"
+            android:layout_height="@dimen/d_9"
+            android:layout_below="@+id/txtAddress"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@+id/txtReservation"
+            android:background="#f0f0f0" />
+
+        <TextView
+            android:id="@+id/txtCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAddress"
+            android:layout_toRightOf="@+id/line_anli"
+            android:text="56457 ca"
+            android:textColor="@color/normal_color_7"
+            android:textSize="@dimen/d_12" />
+
+        <TextView
+            android:id="@+id/txtAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCase"
+            android:layout_toRightOf="@+id/imgAvatar"
+            android:text="Cuộc hẹn"
+            android:textColor="@color/normal_color_7"
+            android:textSize="@dimen/d_12"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+
+    <com.lgkk.base_project.widget.flowlayout.AutoFlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_below="@id/lnAnalytics"
+        android:layout_toRightOf="@id/imgAvatar"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/d_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_7"
+        android:layout_below="@+id/flowLayout"
+        android:background="@color/bg_service_all" />
+</RelativeLayout>

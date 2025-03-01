@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/short_title_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_10"
+        android:background="@color/bg_service_all" />
+
+    <RelativeLayout
+        android:id="@+id/rlComment"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_50">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/length_13"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Đánh giá"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotalComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_marginRight="@dimen/length_3"
+            android:layout_toRightOf="@+id/txtTitle"
+            android:text="(31)"
+            android:textColor="@color/normal_color_7"
+            android:textSize="@dimen/length_14" />
+
+        <RelativeLayout
+            android:id="@+id/rlScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/length_3"
+                android:layout_toLeftOf="@+id/imgStar"
+                android:text="4.7"
+                android:textColor="@color/normal_color_7"
+                android:textSize="@dimen/length_14" />
+
+            <ImageView
+                android:id="@+id/imgStar"
+                android:layout_width="@dimen/length_18"
+                android:layout_height="@dimen/length_18"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/length_5"
+                android:layout_toLeftOf="@+id/imgIcon"
+                android:padding="@dimen/length_3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/evaluate_star_10" />
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="@dimen/length_15"
+                android:layout_height="@dimen/length_15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/length_10"
+                android:padding="@dimen/length_3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/right_arrow_new" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnNoComment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtNoComment"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/length_50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Chưa có đánh giá nào"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/length_13" />
+    </LinearLayout>
+</LinearLayout>

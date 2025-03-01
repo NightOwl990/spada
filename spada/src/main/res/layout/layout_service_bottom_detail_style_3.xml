@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/length_10"
+    android:paddingRight="@dimen/length_10"
+    android:paddingBottom="@dimen/length_5">
+
+    <!--Tag 1-->
+    <RelativeLayout
+        android:id="@+id/rlTag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/length_10"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/rlTitleTag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_service_tag1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgTag1"
+                android:layout_width="@dimen/length_17"
+                android:layout_height="@dimen/length_17"
+                android:padding="@dimen/length_3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_flash_on" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtDescriptionTag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toRightOf="@+id/rlTitleTag1"
+            android:text="Mua 3 tặng 1 phần quà trị giá 200.000đ"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_13" />
+
+        <ImageView
+            android:id="@+id/imgTagMore1"
+            android:layout_width="@dimen/length_15"
+            android:layout_height="@dimen/length_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/length_3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/right_arrow_new" />
+    </RelativeLayout>
+
+    <!--Tag 2-->
+    <RelativeLayout
+        android:id="@+id/rlTag2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/length_10"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/rlTitleTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_service_tag2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgTag2"
+                android:layout_width="@dimen/length_17"
+                android:layout_height="@dimen/length_17"
+                android:padding="@dimen/length_3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_like_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDescriptionTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toRightOf="@+id/rlTitleTag2"
+            android:text="Đặt lịch hôm nay được giảm 10% chi phí"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_13" />
+
+        <ImageView
+            android:id="@+id/imgTagMore2"
+            android:layout_width="@dimen/length_15"
+            android:layout_height="@dimen/length_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/length_3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/right_arrow_new" />
+    </RelativeLayout>
+
+    <!--Tag 3-->
+    <RelativeLayout
+        android:id="@+id/rlTag3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/rlTitleTag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_service_tag3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgTag3"
+                android:layout_width="@dimen/length_17"
+                android:layout_height="@dimen/length_17"
+                android:padding="@dimen/length_3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nav_btn_post" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtDescriptionTag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toRightOf="@+id/rlTitleTag3"
+            android:text="Viết 3 đánh giá tặng phiếu 700.000đ"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/length_13" />
+
+        <ImageView
+            android:id="@+id/imgTagMore3"
+            android:layout_width="@dimen/length_15"
+            android:layout_height="@dimen/length_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/length_3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/right_arrow_new" />
+    </RelativeLayout>
+</LinearLayout>

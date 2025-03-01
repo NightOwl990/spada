@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="@dimen/length_40"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/length_9"
+        android:src="@drawable/app_images_rn_search_icon_new" />
+</RelativeLayout>

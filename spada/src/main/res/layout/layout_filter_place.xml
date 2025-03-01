@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/lnPlaceEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_150"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/length_60"
+            android:layout_height="@dimen/length_60"
+            android:scaleType="fitCenter"
+            android:src="@drawable/error_no_search_circle" />
+        <TextView
+            android:layout_marginTop="@dimen/length_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vui lòng chọn Thành Phố trước."
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_14" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

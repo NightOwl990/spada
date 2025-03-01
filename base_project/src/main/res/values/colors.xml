@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Cart -->
+    <color name="text_price_color">#ffff527f</color>
+
+    <!--Flash Sale-->
+    <color name="flash_tab_bg_color">#ff555555</color>
+    <color name="yuehui_count_down">#fffc2a6f</color>
+
+    <color name="album_default_palette_color_light">#ffe8e8e8</color>
+    <color name="blue">#2196F3</color>
+
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorPrimary">#F59DC8</color>
+    <!--Gradient Group Chose-->
+
+    <!--Step Choose Login-->
+    <color name="stpi_default_circle_color">#F59DC8</color>
+    <color name="stpi_default_primary_color">#F59DC8</color>
+    <color name="stpi_default_line_color">#F59DC8</color>
+    <color name="stpi_default_text_color">#F59DC8</color>
+
+    <!--SmartTabLayout-->
+    <color name="text_tab_shop_enabled">#f44a9e</color>
+    <color name="text_tab_shop_disable">#343434</color>
+
+    <!--Nutrition-->
+    <color name="green_notice_nutrition">#63D985</color>
+    <color name="red_notice_nutrition">#F65858</color>
+    <color name="yellow_notice_nutrition">#FF9600</color>
+
+    <!--Service-->
+    #FF396C
+    <color name="bg_count_down_flash_sale">#FF396C</color>
+    <color name="flash_sale_text_color">#FF3A6E</color>
+    <color name="text_vip_card_color">#919191</color>
+    <color name="golden_color">#A58351</color>
+    <color name="drop_down_unselected">#343434</color>
+    <color name="drop_down_selected">#2CC7C5</color>
+    <color name="color_service_blue_nice">#2CC7C5</color>
+    <color name="bg_suggest_service_listthree">#ED6DC4</color>
+    <color name="bg_service_all">#F3F7F7</color>
+    <color name="bg_service_no_1">#E7E3FC</color>
+    <color name="bg_service_no_2">#E6F7FE</color>
+    <color name="bg_service_no_3">#FFE3DF</color>
+    <color name="bg_text_beauty_no_1">#DFDAFA</color>
+    <color name="bg_text_beauty_no_2">#DDEFFB</color>
+    <color name="bg_text_beauty_no_3">#FDDCD7</color>
+    <color name="text_service_blue">#2FC8C6</color>
+    <color name="transparent_blue_90">#993CCBC9</color>
+    <color name="text_color_golden">#A97932</color>
+    <color name="bg_service_tag1">#FF4D4D</color>
+    <color name="bg_service_tag2">#FF527F</color>
+    <color name="bg_service_tag3">#FFC667</color>
+    <color name="bg_service_tag4">#D3C1FF</color>
+    <color name="text_more">#828282</color>
+    <color name="bg_count_down_timer">#555555</color>
+    <color name="common_service_bg">#fff3f7f7</color>
+    <color name="bg_service_tag5">#88AEFD</color>
+
+    <!--Gradient Service-->
+    <color name="start_service_pink">#FDA5AC</color>
+    <color name="center_service_pink">#FF8B97</color>
+    <color name="end_service_pink">#FF71A1</color>
+
+    <!--Gradient Service-->
+
+    <color name="start_service_orange">#FEF7E7</color>
+    <color name="center_service_orange">#FFF1D7</color>
+    <color name="end_service_orange">#FFEBC8</color>
+
+    <color name="start_service_purple">#F8EDFE</color>
+    <color name="center_service_purple">#F5E4FF</color>
+    <color name="end_service_purple">#F2DCFF</color>
+
+    <!--Diary -->
+
+    <!--Home-->
+    <color name="text_bottom_nav_color">#07D6C5</color>
+    <color name="bg_home_service_toolbar_color">#FE65C7</color>
+    <color name="bg_home_search_color">#EEEEEE</color>
+    <color name="text_shop_deliver">#FF0036</color>
+    <color name="buy_now">#FF5794</color>
+
+    <color name="text_home_service_enable">#FFFFFF</color>
+    <color name="text_home_service_disable">#FFFFFF</color>
+
+    <color name="light_transparent">#16000000</color>
+
+    <color name="shimmer_color_for_image">#55efefef</color>
+    <color name="shimmer_color">#a2878787</color>
+
+    <!--Shop-->
+    <color name="bg_shop_main_color">#F6F6F6</color>
+    <color name="bg_shop_discount_circle">#FF2264</color>
+    <color name="bg_shop_home_tag">#FB5D92</color>
+
+    <!--User background color-->
+
+    <!--Gradient-->
+
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent_90">#99000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_50">#50000000</color>
+    <color name="transparent_20">#20000000</color>
+    <color name="transparent_white">#00FFFFFF</color>
+    <color name="transparent_white_50">#50FFFFFF</color>
+    <color name="transparent_white_70">#70FFFFFF</color>
+
+    <!--//Text Color-->
+
+    <color name="text_dark">#333333</color>
+    <color name="text_main">#4E4E4E</color>
+    <color name="text_btn">#383838</color>
+    <color name="text_category">#4d4d4d</color>
+    <color name="text_sub">#ff777777</color>
+    <color name="text_fade">#ADADAD</color>
+    <color name="bg_press_color">#F5F5F5</color>
+    <color name="text_member">#f44a9e</color>
+    <color name="border_cv">#F4F4F4</color>
+    <color name="text_user_title">#fa9f02</color>
+
+    <color name="grey_stroke">#CCD0D5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#eaeef1</color>
+    <color name="gray_400">#857c8a92</color>
+    <color name="green">#54d07d</color>
+
+    <color name="black">#111</color>
+    <color name="blur">#857c8a92</color>
+    //todo
+
+
+    <color name="primary">#3F51B5</color>
+    <!--<color name="accent">#FF9100</color>-->
+
+    <color name="grey600">#757575</color>
+    <color name="grey200">#ededed</color>
+    <color name="grey500">#bcbcbc</color>
+
+    <!--intro-->
+
+    <!--Divider -->
+    <color name="divider_1px">#EBEBEB</color>
+    <color name="indicator_sliding_tab_layout">#F07BB5</color>
+    <color name="text_sliding_tab_layout">#F07DB6</color>
+
+
+    <color name="normal_color_7">#ff777777</color>
+    <color name="col_333333">#ff333333</color>
+    <color name="col_555555">#ff555555</color>
+    <color name="col_777777">#ff777777</color>
+    <color name="col_f1f1f1">#fff1f1f1</color>
+    <color name="col_f3f7f7">#fff3f7f7</color>
+    <color name="color_2cc7c5">#ff2cc7c5</color>
+    <color name="color_333333">#ff333333</color>
+    <color name="color_777777">#ff777777</color>
+    <color name="color_A97831">#ffa97831</color>
+    <color name="color_F6F6F6">#fff6f6f6</color>
+    <color name="color_FCFAF6">#fffcfaf6</color>
+    <color name="color_ff527f">#ffff527f</color>
+
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_service_all"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_180"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_gradient_flash_sale_background" />
+
+    <com.lgkk.spada.widget.FadeCommonToolbar
+        android:id="@+id/fadeCommonToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cl_ParallaxEndFadeHeight="250"
+        app:cl_ParallaxStartFadeHeight="100"
+        app:cl_alpha="0"
+        app:cl_textStartVisible="true"
+        app:cl_dividerVisible="false"
+        app:cl_drawableLeft="@drawable/baby_icon_back"
+        app:cl_drawableLeftChange="@drawable/baby_icon_nav_back"
+        app:cl_drawableRight="@drawable/icon_share_white"
+        app:cl_drawableRightChange="@drawable/seckill_share"
+        app:cl_drawableMiddleChange="@drawable/hot_girl_3"
+        app:cl_text="Flash Deal"
+        app:cl_textStyle="3"
+        app:cl_textChange="Hoàng Văn A"
+        app:cl_textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/content_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fadeCommonToolbar">
+
+
+        <com.lgkk.base_project.widget.magicindicator.MagicIndicator
+            android:id="@+id/magicTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_45" />
+
+
+        <View
+            android:layout_marginLeft="@dimen/d_14"
+            android:layout_marginRight="@dimen/d_14"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_4"
+            android:layout_below="@+id/magicTabLayout"
+            android:background="@drawable/bg_round_bottom_left_right_white" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/content_rl"
+        android:orientation="vertical"
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/d_14"
+            android:id="@+id/rvFlashSaleByHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <com.lgkk.base_project.widget.NonSwipeableWithAnimationViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+    </LinearLayout>
+
+
+</RelativeLayout>

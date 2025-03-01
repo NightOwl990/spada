@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/length_7">
+
+        <View
+            android:layout_width="@dimen/length_25"
+            android:layout_height="1dp"
+            android:background="@color/divider_1px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_8"
+            android:layout_marginRight="@dimen/length_8"
+            android:text="Đề xuất cho bạn"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_14" />
+
+        <View
+            android:layout_width="@dimen/length_25"
+            android:layout_height="1dp"
+            android:background="@color/divider_1px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnGoToRecommend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_250"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_bg_flash_sale" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_10"
+        android:background="@color/bg_service_all" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

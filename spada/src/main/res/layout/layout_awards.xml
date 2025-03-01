@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_award"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/d_20"
+    android:background="@drawable/awards_bg_c6e0ff"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/d_5"
+    android:paddingRight="@dimen/d_5">
+
+    <ImageView
+        android:id="@+id/iv_award"
+        android:layout_width="@dimen/d_18"
+        android:layout_height="@dimen/d_18"
+        android:paddingRight="@dimen/d_5"
+        android:src="@drawable/hospital_award_icon" />
+
+    <TextView
+        android:id="@+id/tvAwards"
+        android:text="Giải thưởng spa tốt nhất năm 2018"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d28400"
+        android:textSize="@dimen/d_11" />
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnMostView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlMostView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txtMostView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_16"
+            android:text="Nhật ký"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_15"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Xem thêm"
+                android:textColor="@color/text_more"
+                android:textSize="@dimen/length_14" />
+
+            <ImageView
+                android:id="@+id/imgMore"
+                android:layout_width="@dimen/length_15"
+                android:layout_height="@dimen/length_15"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/length_10"
+                android:padding="@dimen/length_2"
+                android:src="@drawable/topic_head_right" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMostView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_7"
+        android:layout_marginRight="@dimen/length_7" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_7"
+        android:background="@color/bg_service_all" />
+
+</LinearLayout>

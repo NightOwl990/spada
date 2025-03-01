@@ -1,0 +1,285 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+
+buildscript {
+
+    ext.kotlin_version = '1.9.0'
+
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://maven.testfairy.com' }
+        maven { url "https://gitlab.com/api/v4/projects/50747855/packages/maven" }
+        maven {
+            url = uri("https://storage.googleapis.com/r8-releases/raw")
+        }
+
+    }
+
+    dependencies {
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.1'
+//        classpath 'com.google.firebase:firebase-plugins:2.0.0'
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.google.gms:google-services:4.3.10'
+//        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+        classpath 'com.guardsquare:proguard-gradle:7.1.0'
+        classpath "com.alibaba:arouter-register:1.0.2"
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
+        classpath 'com.android.tools:r8:8.3.37'
+        classpath 'com.google.guava:guava:30.1.1-jre'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+
+//        classpath 'com.google.firebase:perf-plugin:1.4.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+        }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://jitpack.io" }
+
+    }
+    buildDir = "${rootProject.rootDir}/build/${project.name}"
+}
+
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    cfgs = [
+            compileSdkVersion    : 29,
+//            buildToolsVersion    : "29.0.3",
+            minSdkVersion        : 14,
+            targetSdkVersion     : 29,
+            versionCode          : 10,
+            versionName          : "2.0.0",
+            ucropVersionCode     : 22,
+            ucropVersionName     : "2.2.0-native",
+
+            //open version control
+            androidSupportVersion: "27.0.2",
+            glide                : "4.5.0",
+            rxjava               : "2.0.5",
+            rxandroid            : "2.0.1"
+    ]
+    rxunfurlVersion = '0.3.0'
+
+    supportLibVersion = '25.3.1'
+    okhttpVersion = '3.8.0'
+    okioVersion = '1.13.0'
+    rxjavaVersion = '2.1.0'
+    rxandroidVersion = '2.0.1'
+    jsoupVersion = '1.10.2'
+    espressoVersion = '2.2.2'
+    junitVersion = '4.12'
+    mockitoVersion = '2.2.15'
+    butterknifeVersion = '8.5.1'
+    picassoVersion = '2.5.2'
+    fastadapterVersion = '1.7.0'
+
+    androidVersion = 28
+    minSupportSDKVersion = 16
+    demoMinSDK = 21
+    supportLibraryVersion = '27.1.1'
+    constrainLayoutVersion = '1.1.3'
+    archLibraryVersion = '1.1.1'
+    exoPlayer2Version = '2.8.2'
+    googleApiClient = '1.24.1'
+    glide = '4.8.0'
+    leackCanary = '1.6.1'
+    VERSION_NAME='1.1.3-SNAPSHOT'
+
+}
+
+ext.sharedGroup = {dependencyHandler->
+    delegate = dependencyHandler
+
+    testImplementation rootProject.ext.dependencies["junit"]
+    androidTestImplementation rootProject.ext.dependencies["runner"]
+    androidTestImplementation rootProject.ext.dependencies["rules"]
+    androidTestImplementation rootProject.ext.dependencies["espresso-core"]
+    androidTestImplementation rootProject.ext.dependencies["espresso-intents"]
+
+    implementation "com.android.support:multidex:1.0.3"
+
+    implementation "androidx.activity:activity:1.2.4"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation "androidx.appcompat:appcompat:1.1.0"
+    implementation "com.google.android.material:material:1.2.0-beta01"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.annotation:annotation:1.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.vectordrawable:vectordrawable:1.1.0"
+    implementation "androidx.palette:palette:1.0.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+//    Loading Picture
+    implementation rootProject.ext.dependencies["picasso"]
+    implementation rootProject.ext.dependencies["glide"]
+    annotationProcessor rootProject.ext.dependencies["glide-compiler"]
+    implementation rootProject.ext.dependencies["glide-okhttp3-integration"]
+    implementation rootProject.ext.dependencies["glide-annotations"]
+
+
+    //api
+    implementation rootProject.ext.dependencies["retrofit"]
+    implementation rootProject.ext.dependencies["retrofit-converter-gson"]
+    implementation rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
+    implementation rootProject.ext.dependencies["retrofit-converter-scalars"]
+    implementation rootProject.ext.dependencies["gson"]
+    implementation rootProject.ext.dependencies["okhttp3"]
+    implementation rootProject.ext.dependencies["okhttp3-logging-interceptor"]
+
+
+    //    ARoute
+//    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+
+    //rxJava 2 ------
+    implementation rootProject.ext.dependencies["rxjava2"]
+    implementation rootProject.ext.dependencies["rxandroid2"]
+
+    //    Rx LifeCycler -------------------
+    implementation rootProject.ext.dependencies["rxlifecycle2"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-android"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-components"]
+    implementation rootProject.ext.dependencies["lifecycle-extensions"]
+
+    //RxBinding ---------------------
+    implementation rootProject.ext.dependencies["rxbinding"]
+
+    //    Stetho ----------------------
+    implementation rootProject.ext.dependencies["stetho"]
+    implementation rootProject.ext.dependencies["stetho-okhttp3"]
+
+//    ButterKnife --------
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+
+    //    Lombok
+    implementation "org.projectlombok:lombok:1.18.20"
+    annotationProcessor "org.projectlombok:lombok:1.18.20"
+
+    //RxPermission
+    implementation rootProject.ext.dependencies["rxpermissions"]
+
+    //Dagger2
+    implementation 'com.google.dagger:dagger:2.55'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.55'
+    implementation 'com.google.dagger:dagger-android:2.55'
+    implementation 'com.google.dagger:dagger-android-support:2.55'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.55'
+
+//    Base RecyclerView Helper
+    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+
+    //SmartRefreshLayout
+//    implementation rootProject.ext.dependencies["SmartRefreshLayout"]
+//    implementation rootProject.ext.dependencies["SmartRefreshHeader"]
+
+    //    Tablayout
+    implementation rootProject.ext.dependencies["smarttablayout"]
+
+//    Banner
+//    implementation rootProject.ext.dependencies["youth-banner"]
+
+    implementation rootProject.ext.dependencies["zxing"]
+    implementation rootProject.ext.dependencies["jsoup"]
+//    implementation rootProject.ext.dependencies["exoplayer"]
+
+    //Animation
+    implementation rootProject.ext.dependencies["lottie"]
+    implementation rootProject.ext.dependencies["android-gif-drawable"]
+
+    //    SQLite
+//    implementation rootProject.ext.dependencies["litepal"]
+//    implementation rootProject.ext.dependencies["android-networking"]
+
+    //    ShimmerLayout
+    implementation rootProject.ext.dependencies["shimmerlayout"]
+
+
+    implementation rootProject.ext.dependencies["countdownview"]
+//    implementation rootProject.ext.dependencies["flowlayout"]
+
+    implementation rootProject.ext.dependencies["fastjson"]
+    implementation rootProject.ext.dependencies["fastjson-android"]
+
+
+//    //    QMUI
+//    implementation rootProject.ext.dependencies["qmui"]
+//    implementation rootProject.ext.dependencies["qmui-arch"]
+
+//    implementation rootProject.ext.dependencies["firebase-jobdispatcher"]
+
+
+//    Tinker
+//    compileOnly rootProject.ext.dependencies["tinker-android-anno"]
+//    annotationProcessor rootProject.ext.dependencies["tinker-android-anno"]
+//    implementation rootProject.ext.dependencies["tinker-android-lib"]
+
+    //    Status Bar Utils
+//    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+
+//    implementation 'com.blankj:utilcode:1.23.6'
+
+    implementation 'io.github.lucksiege:pictureselector:v2.5.8'
+//    implementation 'com.testfairy:testfairy-android-sdk:1.+@aar'
+
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+    implementation 'com.alibaba:arouter-api:1.5.2'
+    implementation 'com.blankj:utilcodex:1.31.1'
+
+//    implementation 'com.jaeger.statusbarutil:library:1.5.0'
+
+    implementation  'io.github.scwang90:refresh-layout-kernel:3.0.0-alpha'
+    implementation  'io.github.scwang90:refresh-header-classics:3.0.0-alpha'
+    implementation  'io.github.scwang90:refresh-header-radar:3.0.0-alpha'
+    implementation  'io.github.scwang90:refresh-header-falsify:3.0.0-alpha'
+    implementation  'io.github.scwang90:refresh-header-material:3.0.0-alpha'
+    implementation  'io.github.scwang90:refresh-header-two-level:3.0.0-alpha'
+    implementation  'io.github.scwang90:refresh-footer-ball:3.0.0-alpha'
+    implementation  'io.github.scwang90:refresh-footer-classics:3.0.0-alpha'
+
+    implementation platform('com.google.firebase:firebase-bom:32.8.0')
+    implementation 'com.google.firebase:firebase-common-ktx'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation "com.google.firebase:firebase-config"
+    implementation 'com.google.firebase:firebase-perf-ktx'
+    implementation 'com.google.firebase:firebase-messaging:20.2.0'
+    implementation("com.google.firebase:firebase-crashlytics")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation 'com.google.firebase:firebase-dynamic-links'
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx'
+
+
+    implementation 'com.github.amitshekhariitbhu.Fast-Android-Networking:jackson-android-networking:1.0.4'
+
+
+    // Zalo SDK
+    implementation "me.zalo:sdk-core:+"
+    implementation "me.zalo:sdk-auth:+"
+    implementation "me.zalo:sdk-openapi:+"
+}

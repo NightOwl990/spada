@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_gradient_quantity_view"
+    android:layout_height="@dimen/d_15">
+
+    <ImageView
+        android:id="@+id/imgPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d_20"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_gradient_quantity_percent_view"/>
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d_5"
+        android:id="@+id/txtSoldCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã bán 50"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/txtPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17%"
+        android:layout_marginRight="@dimen/d_5"
+        android:textColor="#FF2C3F"
+        android:textSize="@dimen/dp_10" />
+</RelativeLayout>

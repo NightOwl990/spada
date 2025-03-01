@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/length_3"
+    android:paddingRight="@dimen/length_3">
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/length_10"
+        android:id="@+id/imgService"
+        android:layout_width="@dimen/length_25"
+        android:layout_height="@dimen/length_25"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/length_3"
+        android:src="@drawable/home_icon_window_boy" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgService"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/length_10"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Chăm sóc"
+        android:textColor="@color/text_category"
+        android:textSize="@dimen/length_11" />
+
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/length_16"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/length_15"
+        android:background="@drawable/bg_round_shop_discount_border"
+        android:gravity="center"
+        android:minWidth="@dimen/length_16"
+        android:paddingLeft="@dimen/length_3"
+        android:paddingRight="@dimen/length_3"
+        android:text="9"
+        android:textColor="@color/white"
+        android:textSize="@dimen/length_9"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

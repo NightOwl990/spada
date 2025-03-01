@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="stepLabels">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+    <!--Bottom Flyco Tablayout-->
+    <string-array name="bottom_layout_icon_titles">
+        <item>Trang chủ</item>
+        <item>Mua sắm</item>
+        <item></item>
+        <item>Thông báo</item>
+        <item>Tài khoản</item>
+    </string-array>
+
+    <string-array name="notification_tab">
+        <item>Tin nhắn</item>
+        <item>Bình luận</item>
+        <item>Yêu thích</item>
+        <item>Hộp thư</item>
+        <item>Kiến thức</item>
+    </string-array>
+
+
+</resources>

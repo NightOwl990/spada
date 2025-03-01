@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_bar_height"
+        android:background="@color/bg_shop_main_color">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/rootView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5F5F5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/imgBgTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/length_150"
+                        android:background="#00DCC7"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/length_100"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <include layout="@layout/layout_doctor_detail_info_1" />
+
+                        <include layout="@layout/layout_doctor_detail_info_2" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="900dp"
+                            android:background="@color/white"
+                            android:visibility="visible">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <!--Custom Toolbar-->
+    <com.lgkk.spada.widget.FadeCommonToolbar
+        android:id="@+id/fadeCommonToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cl_ParallaxEndFadeHeight="150"
+        app:cl_ParallaxStartFadeHeight="150"
+        app:cl_alpha="0"
+        app:cl_textStartVisible="false"
+        app:cl_dividerVisible="false"
+        app:cl_drawableLeft="@drawable/baby_icon_back"
+        app:cl_drawableLeftChange="@drawable/baby_icon_nav_back"
+        app:cl_drawableRight="@drawable/icon_share_white"
+        app:cl_drawableRightChange="@drawable/seckill_share"
+        app:cl_drawableMiddleChange="@drawable/hot_girl_3"
+        app:cl_text="Bác sĩ"
+        app:cl_textChange="Hoàng Văn A"
+        app:cl_textColor="@color/text_dark" />
+    <!--End Custom Toolbar-->
+
+    <TextView
+        android:id="@+id/txtTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlBottomBar"
+        android:background="@color/transparent_90"
+        android:gravity="center"
+        android:padding="@dimen/length_10"
+        android:text="Vui lòng chọn ít nhất 1 sản phẩm"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <!--Custom Bottom Bar-->
+    <LinearLayout
+        android:id="@+id/rlBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_60"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/length_10"
+        android:paddingTop="@dimen/length_5"
+        android:paddingRight="@dimen/length_10"
+        android:paddingBottom="@dimen/length_10">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_doctor_support_online"
+            android:gravity="center"
+            android:text="Hỗ trợ trực tuyến"
+            android:textColor="@color/white"
+            android:textSize="@dimen/length_15" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_press_item"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/btnLeft"
+        android:layout_width="@dimen/length_40"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/length_9"
+        android:src="@drawable/nav_btn_back_black" />
+</RelativeLayout>

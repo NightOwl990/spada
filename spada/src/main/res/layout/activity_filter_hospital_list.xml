@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.lgkk.spada.screen.service.widget.FilterToolbar
+        android:id="@+id/filterToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flt_drawableLeft="@drawable/baby_icon_nav_back"
+        app:flt_drawableRight="@drawable/top_search_b"
+        app:flt_drawableSubRight="@drawable/top_cart_b_small"
+        app:flt_dropdownMidVisible="false"
+        app:flt_text="Spa nổi bật"
+        app:flt_textColor="@color/text_dark" />
+
+    <!--<spada.ui.screen.service.widget.FilterLayoutView-->
+    <!--android:layout_below="@+id/filterToolbar"-->
+    <!--android:id="@+id/filterLayoutView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filterToolbar">
+
+        <LinearLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/filterToolbar"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.lgkk.spada.screen.service.widget.PopupFilterMenu
+                android:id="@+id/popupFilterMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dividerColor="@color/white"
+                app:maskColor="@color/transparent_50"
+                app:menuBackgroundColor="@color/white"
+                app:menuMenuHeightPercent="0.5"
+                app:menuSelectedIcon="@drawable/common_filter_arrow_up"
+                app:menuTextSize="@dimen/length_14"
+                app:menuUnselectedIcon="@drawable/common_filter_arrow_down"
+                app:textSelectedColor="@color/drop_down_selected"
+                app:textUnselectedColor="@color/drop_down_unselected"
+                app:underlineColor="@color/divider_1px" />
+        </LinearLayout>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlService"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/length_4"
+    android:layout_marginRight="@dimen/length_4"
+    android:layout_marginBottom="@dimen/length_8"
+    android:background="@drawable/bg_round_border_white_fill_5px">
+    <!--Image-->
+    <FrameLayout
+        android:id="@+id/lnImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+            android:id="@+id/imgAfter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hot_girl_4"
+            app:riv_corner_radius_top_left="@dimen/length_5"
+            app:riv_corner_radius_top_right="@dimen/length_5" />
+
+        <!--Before-->
+        <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+            android:id="@+id/imgBefore"
+            android:layout_width="@dimen/length_65"
+            android:layout_height="@dimen/length_65"
+            android:layout_gravity="bottom|end"
+            android:scaleType="centerCrop"
+            android:src="@drawable/before_1"
+            android:visibility="visible"
+            app:riv_border_color="@color/white"
+            app:riv_border_width="0.5dp"
+            app:riv_corner_radius_top_left="@dimen/length_5"
+            app:riv_corner_radius_top_right="@dimen/length_5" />
+
+    </FrameLayout>
+
+    <!--After-->
+
+
+    <LinearLayout
+        android:id="@+id/lnBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnImage"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_8"
+            android:layout_marginTop="@dimen/length_10"
+            android:layout_marginRight="@dimen/length_8"
+            android:layout_marginBottom="@dimen/length_5"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Bước đột phá về thẩm mỹ Bước đột phá về thẩm mỹ Bước đột phá về thẩm mỹBước đột phá về thẩm mỹ"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_12"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/lnName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtContent"
+            android:layout_marginLeft="@dimen/length_8"
+            android:layout_marginBottom="@dimen/length_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.lgkk.base_project.widget.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="@dimen/length_18"
+                android:layout_height="@dimen/length_18"
+                android:src="@drawable/hot_girl_3"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/length_5"
+                android:layout_marginRight="@dimen/length_3"
+                android:layout_toRightOf="@+id/imgAvatar"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Mỹ nữ Đông Phương"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/length_10" />
+
+            <LinearLayout
+                android:id="@+id/lnView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/length_8"
+                android:background="@color/white"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/length_12"
+                    android:layout_height="@dimen/length_12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/length_2"
+                    android:padding="@dimen/length_2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/my_like_gray" />
+
+                <TextView
+                    android:id="@+id/txtLikeNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="267K"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/length_10" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--Name-->
+
+
+</RelativeLayout>

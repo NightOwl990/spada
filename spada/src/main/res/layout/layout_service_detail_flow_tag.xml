@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnServiceTag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgTag"
+        android:layout_width="@dimen/length_12"
+        android:layout_height="@dimen/length_12"
+        android:layout_marginRight="@dimen/length_4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/beauty_advisor_selected" />
+
+    <TextView
+        android:id="@+id/txtNameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/length_5"
+        android:text="Nhật ký"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/length_13" />
+</LinearLayout>

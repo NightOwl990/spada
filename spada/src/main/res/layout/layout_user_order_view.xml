@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/length_10"
+    android:layout_marginBottom="@dimen/length_10"
+    android:layout_marginRight="@dimen/length_10"
+    android:background="@drawable/bg_round_border_white_8px"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/length_15"
+        android:paddingBottom="@dimen/length_15"
+        android:id="@+id/rl_order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d_10"
+            android:text="Đơn hàng của tôi"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/length_14" />
+
+        <LinearLayout
+            android:id="@+id/ln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/length_10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/length_3"
+                android:drawablePadding="@dimen/d_2"
+                android:text="Xem đầy đủ"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/length_12" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/length_10"
+                android:layout_height="@dimen/length_10"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user_news_right" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_1px" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

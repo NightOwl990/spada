@@ -1,0 +1,108 @@
+{
+    "project_type": "gradle",
+    "android_gradle_plugin_version": "3.1.3",
+    "freeline_gradle_plugin_version": "0.8.8",
+    "java_home": "C:\\Program Files\\Java\\jdk1.8.0_202",
+    "freeline_cache_dir": "F:\\Project Android\\android\\bibo-android",
+    "auto_dependency": true,
+    "product_flavor": "",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "root_dir": "F:\\Project Android\\android\\bibo-android",
+    "main_project_name": "app",
+    "main_project_dir": "app",
+    "build_directory": "F:\\Project Android\\android\\bibo-android\\app\\build",
+    "build_cache_dir": "F:\\Project Android\\android\\bibo-android\\app\\build\\freeline",
+    "build_tools_version": "28.0.3",
+    "sdk_directory": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk",
+    "build_tools_directory": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\build-tools\\28.0.3",
+    "compile_sdk_version": "android-28",
+    "compile_sdk_directory": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\platforms\\android-28",
+    "package": "com.bsa.babau",
+    "debug_package": "com.bsa.babau",
+    "main_manifest_path": "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\AndroidManifest.xml",
+    "launcher": "com.bsa.babau.ui.screen.account.activity.SplashScreenActivity",
+    "apk_path": "F:\\Project Android\\android\\bibo-android\\app\\build\\outputs\\apk\\app-debug.apk",
+    "extra_dep_res_paths": [
+        
+    ],
+    "exclude_dep_res_paths": [
+        
+    ],
+    "main_r_path": "F:\\Project Android\\android\\bibo-android\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "use_jdk8": true,
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "use_system_gradle": false,
+    "check_sources_md5": [
+        
+    ],
+    "main_src_directory": [
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\java",
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\java"
+    ],
+    "main_res_directory": [
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\res",
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\res"
+    ],
+    "main_assets_directory": [
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\assets",
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\assets"
+    ],
+    "main_jni_directory": [
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\jni",
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\jni"
+    ],
+    "main_jniLibs_directory": [
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\jniLibs",
+        "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\jniLibs"
+    ],
+    "project_source_sets": {
+        "app": {
+            "main_src_directory": [
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\java",
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\java"
+            ],
+            "main_res_directory": [
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\res",
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\res"
+            ],
+            "main_assets_directory": [
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\assets",
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\assets"
+            ],
+            "main_jni_directory": [
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\jni",
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\jni"
+            ],
+            "main_jniLibs_directory": [
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\debug\\jniLibs",
+                "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\jniLibs"
+            ],
+            "main_manifest_path": "F:\\Project Android\\android\\bibo-android\\app\\src\\main\\AndroidManifest.xml"
+        }
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "F:\\Project Android\\android\\bibo-android\\app"
+        }
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ]
+}

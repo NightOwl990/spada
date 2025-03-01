@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lgkk.spada.screen.service.widget.FilterToolbar
+        android:id="@+id/filterToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flt_drawableLeft="@drawable/baby_icon_nav_back"
+        app:flt_drawableMiddle="@drawable/common_filter_arrow_down"
+        app:flt_drawableRight="@drawable/top_search_b"
+        app:flt_drawableSubRight="@drawable/top_cart_b_small"
+        app:flt_text="Bộ lọc"
+        app:flt_textColor="@color/text_dark" />
+
+    <!--<spada.ui.screen.service.widget.FilterLayoutView-->
+        <!--android:layout_below="@+id/filterToolbar"-->
+        <!--android:id="@+id/filterLayoutView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_below="@+id/filterToolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_service_all"
+        android:visibility="visible">
+
+        <com.lgkk.spada.screen.service.widget.PopupFilterMenu
+            android:id="@+id/popupFilterMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menuTextSize="@dimen/length_14"
+            app:textUnselectedColor="@color/drop_down_unselected"
+            app:textSelectedColor="@color/drop_down_selected"
+            app:dividerColor="@color/white"
+            app:underlineColor="@color/divider_1px"
+            app:menuMenuHeightPercent="0.5"
+            app:menuSelectedIcon="@drawable/common_filter_arrow_up"
+            app:maskColor="@color/transparent_50"
+            app:menuBackgroundColor="@color/white"
+            app:menuUnselectedIcon="@drawable/common_filter_arrow_down"/>
+    </LinearLayout>
+
+</RelativeLayout>

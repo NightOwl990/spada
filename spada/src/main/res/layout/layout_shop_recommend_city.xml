@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recommend_city_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_13"
+        android:layout_marginTop="@dimen/length_15"
+        android:layout_marginBottom="@dimen/length_15"
+        android:gravity="center_vertical"
+        android:text="Địa điểm thường lui tới"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/length_15" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecommendCity"
+        android:layout_marginLeft="@dimen/length_9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/d_10"
+        android:background="@color/bg_service_all" />
+</LinearLayout>

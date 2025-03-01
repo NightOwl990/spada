@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/d_138"
+    android:layout_height="@dimen/d_160"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/d_8"
+    android:background="@drawable/ease_recommend_city_bg"
+    android:orientation="vertical">
+
+    <com.lgkk.base_project.widget.roundedimageview.RoundedImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="@dimen/d_130"
+        android:layout_marginLeft="0.7dp"
+        android:layout_height="@dimen/d_80"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/defaut_recommend_city"
+        app:riv_border_color="@color/transparent"
+        app:riv_border_width="0dp"
+        app:riv_corner_radius_top_left="@dimen/length_5"
+        app:riv_corner_radius_top_right="@dimen/length_5"
+        app:riv_mutate_background="true" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d_13"
+        android:paddingRight="@dimen/d_13">
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d_6"
+            android:background="@drawable/ease_city_name_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="TMV Toàn cầu"
+            android:minWidth="@dimen/d_46"
+            android:paddingLeft="@dimen/d_4"
+            android:paddingRight="@dimen/d_4"
+            android:textColor="@color/col_333333"
+            android:textSize="@dimen/length_14" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_3"
+            android:text="Sức mạnh công nghệ"
+            android:textColor="@color/col_555555"
+            android:textSize="@dimen/length_11" />
+
+        <TextView
+            android:id="@+id/txtSpaAndDoctorCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="210 Vị trí/123 Bác sĩ"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/length_10" />
+    </LinearLayout>
+</LinearLayout>
